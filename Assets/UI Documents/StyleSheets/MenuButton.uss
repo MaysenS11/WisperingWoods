@@ -1,0 +1,30 @@
+:root {
+}
+
+.menu-button {
+    background-size: 100% 100%;
+    width: 400px;
+    height: 80px;
+    font-size: 22px;
+    -unity-text-outline-width: 0;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    -unity-font-style: bold;
+    background-color: rgb(156, 159, 127);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-button:hover {
+    background-size: 100% 100%;
+    width: 400px;
+    height: 80px;
+    font-size: 22px;
+    -unity-text-outline-width: 0;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    -unity-font-style: bold;
+    background-color: rgb(179, 183, 146);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+

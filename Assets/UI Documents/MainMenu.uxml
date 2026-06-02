@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Documents/StyleSheets/MenuButton.uss?fileID=7433441132597879392&amp;guid=7fb07cfca8d3a0547afdb7ac3fb2af45&amp;type=3#MenuButton"/>
+    <ui:VisualElement name="Backround" style="flex-grow: 1; background-color: rgb(119, 136, 153); align-items: center; align-content: center; justify-content: center;">
+        <ui:GroupBox style="justify-content: center; align-content: center; align-self: stretch; align-items: center;">
+            <ui:Button text="Start" name="StartButton" class="menu-button"/>
+            <ui:Button text="Options" name="OptionsButton" class="menu-button"/>
+            <ui:Button text="Credits" name="CreditsButton" class="menu-button"/>
+            <ui:Button text="Quit" name="QuitButton" class="menu-button"/>
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>
