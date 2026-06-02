@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3f57776868811fd448481e37b2a90595
+guid: b884af45b47838c4aa2ad669f2e96078
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ground_02_0
+      name: TileMapIntro_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45e1331ce389101449bdf4dab2fe7d19
-      internalID: -1951977403
+      spriteID: c9cdbc815baa986419b1d61f76b30bc1
+      internalID: 832233699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_1
+      name: TileMapIntro_1
       rect:
         serializedVersion: 2
         x: 32
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52493fa6c7389e54ba732534acc08eb2
-      internalID: 1691102432
+      spriteID: 873b5ab11c60b7049a552bcb7f6d87b2
+      internalID: -1716515637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_2
+      name: TileMapIntro_2
       rect:
         serializedVersion: 2
         x: 64
@@ -156,17 +156,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3adb857b16b657c4aa01280b2341167c
-      internalID: 1666690758
+      spriteID: 91972c824de5cae4e9844ef300785f1a
+      internalID: 567751271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_3
+      name: TileMapIntro_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 224
         y: 160
         width: 32
         height: 32
@@ -178,58 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3974142e04e7c9b4eb7a32c4672540a7
-      internalID: 1447990023
+      spriteID: a04e81b0f84e8b04a9953a0daf41ffbe
+      internalID: -798029971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 735332559b6291d4a9e015625c0d988d
-      internalID: 2038388565
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_02_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 160
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bf9b02f197750f4eb5beca3a2d854f0
-      internalID: -743146580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_02_6
+      name: TileMapIntro_4
       rect:
         serializedVersion: 2
         x: 256
@@ -244,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13f9d53983418e24499f85220e761e10
-      internalID: -1382136463
+      spriteID: 09c6d3a6b36f6a14eb0410169e325112
+      internalID: 445214836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_7
+      name: TileMapIntro_5
       rect:
         serializedVersion: 2
         x: 288
@@ -266,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6bfe9fde068ff5489cc507159947fe7
-      internalID: 272981512
+      spriteID: 595a50f279a2d4a4bb998dc815fd7aac
+      internalID: -944924128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_8
+      name: TileMapIntro_6
       rect:
         serializedVersion: 2
         x: 0
@@ -288,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dabdf37131dc4db44a9ab40394bdeb2b
-      internalID: -1079904009
+      spriteID: e3fdb0a06dc7666408740fd6e602dcc6
+      internalID: 1522868382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_9
+      name: TileMapIntro_7
       rect:
         serializedVersion: 2
         x: 32
@@ -310,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30d5376f85bfbbd45b704aa01d1e39ab
-      internalID: -554051361
+      spriteID: 0693d4c7fa503104587362a5b91f5d8c
+      internalID: 9418709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_10
+      name: TileMapIntro_8
       rect:
         serializedVersion: 2
         x: 64
@@ -332,36 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ef16e391014a8245b5b6f5724ba1efb
-      internalID: -334247780
+      spriteID: c491bec7a4c6344459879250519b8652
+      internalID: 607030810
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_11
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d962ede11037e34087b1197c696af52
-      internalID: -30910523
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_02_12
+      name: TileMapIntro_9
       rect:
         serializedVersion: 2
         x: 128
@@ -376,17 +310,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e29e6a71850dda04185cfe5f92c18248
-      internalID: -2100239006
+      spriteID: 3f156f1d2b34c8749b7f941251ac7af6
+      internalID: 1661240365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_13
+      name: TileMapIntro_10
       rect:
         serializedVersion: 2
-        x: 160
+        x: 224
         y: 128
         width: 32
         height: 32
@@ -398,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be846486f3832274ca183f15292e2053
-      internalID: 1460496926
+      spriteID: 8bc1299eefa62c14eb13366c571e93a1
+      internalID: 1415464677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_14
+      name: TileMapIntro_11
       rect:
         serializedVersion: 2
         x: 256
@@ -420,14 +354,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2290e53f1cad654fa260a2f4795da4f
-      internalID: -416404534
+      spriteID: 5ec62b88384449d4aacd874b365c72fb
+      internalID: 552364083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_15
+      name: TileMapIntro_12
       rect:
         serializedVersion: 2
         x: 288
@@ -442,36 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e77498c0bce3d164b95f7d64e7eb9bea
-      internalID: -2075773740
+      spriteID: 2dbdbdc441beb444fbb1f63717dea534
+      internalID: -1181147724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_16
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ab19e37b3e9f174db920a812e673a30
-      internalID: 710818189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_02_17
+      name: TileMapIntro_13
       rect:
         serializedVersion: 2
         x: 32
@@ -486,14 +398,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18b9fd2dabd970c4b9061d13ee15a6d2
-      internalID: 337597694
+      spriteID: 83dd446c02b9a4247885524e06b20489
+      internalID: -1830029453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_18
+      name: TileMapIntro_14
       rect:
         serializedVersion: 2
         x: 64
@@ -508,14 +420,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 873d75c762e3b0c4e90c5e71a24650a9
-      internalID: 752975986
+      spriteID: c23f4ca35a78b3640a1b021c88873c4c
+      internalID: -1735273559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_19
+      name: TileMapIntro_15
       rect:
         serializedVersion: 2
         x: 96
@@ -530,14 +442,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a98501e0d1da3645ac47c3345ccc068
-      internalID: 157455586
+      spriteID: a6e42d38846bce04790e96d62f8cdd01
+      internalID: 328685891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_20
+      name: TileMapIntro_16
       rect:
         serializedVersion: 2
         x: 128
@@ -552,14 +464,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea1564bcf6f026d439926569b50a197c
-      internalID: 1453143205
+      spriteID: 21c681377edd7e041b84f7442df0574d
+      internalID: 441712234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_21
+      name: TileMapIntro_17
       rect:
         serializedVersion: 2
         x: 160
@@ -574,18 +486,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e327c65b33de0d240ab6f426f3992d4e
-      internalID: 1422803650
+      spriteID: cfd5ebd39b144cd45894cd117100c43f
+      internalID: 1126966387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_22
+      name: TileMapIntro_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 224
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -596,14 +508,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 431a033277e6caf4a82be3d2922ba9f2
-      internalID: -1194790096
+      spriteID: e52e1ae6d541040449e68807a80dc1e0
+      internalID: -604531899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_23
+      name: TileMapIntro_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697a91b6a88614d4caa144a86b9a114f
+      internalID: -2020507330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapIntro_20
       rect:
         serializedVersion: 2
         x: 32
@@ -618,14 +552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ed24cd54505bc54a90789257b3a4571
-      internalID: 427692316
+      spriteID: 10ce25273522d624f9b293169d47639c
+      internalID: -1517083556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_24
+      name: TileMapIntro_21
       rect:
         serializedVersion: 2
         x: 64
@@ -640,14 +574,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bcad574011c54f42907bcdadd9e5d01
-      internalID: -1786432873
+      spriteID: 4dfe555e99b245640be245ed5d1f9622
+      internalID: 737397664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_25
+      name: TileMapIntro_22
       rect:
         serializedVersion: 2
         x: 96
@@ -662,14 +596,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db58fef65c0fce5468b675dcad4242fe
-      internalID: -463430792
+      spriteID: bc94c71ed8fba814dbaaa1a5997e08d5
+      internalID: 1876751778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_26
+      name: TileMapIntro_23
       rect:
         serializedVersion: 2
         x: 128
@@ -684,14 +618,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ceebc6e14d9cb504ba269ab6096eccf4
-      internalID: -1828298665
+      spriteID: 9ebe3f72b7e8ce94aa7de43419cc331c
+      internalID: -743793571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_27
+      name: TileMapIntro_24
       rect:
         serializedVersion: 2
         x: 160
@@ -706,14 +640,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a89cd5b4d5295f1419b8714e7987f4ae
-      internalID: 1558911821
+      spriteID: fcb8bdc4ca153cc46b770229e4ce41c0
+      internalID: -142289633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_28
+      name: TileMapIntro_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fcebc7d2f19184eb4d633f8b8fa34a
+      internalID: -1565511241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapIntro_26
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0f9ad422122274dad83fca23fe8d2a
+      internalID: -233022244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapIntro_27
       rect:
         serializedVersion: 2
         x: 256
@@ -728,80 +706,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bbe62406fcf87048a84e9d3e8e98d80
-      internalID: -1054850801
+      spriteID: c1fafa2008a105544b6535be675f609d
+      internalID: -908288034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_29
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3fd29a9ad772b9d4eb96dcc57bc35d26
-      internalID: -531829797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_02_30
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07af9093c2624a14faf8a9e0ef8e0637
-      internalID: 866829337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_02_31
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46729a7291d3b614b806a687335a9046
-      internalID: 2062509833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_02_32
+      name: TileMapIntro_28
       rect:
         serializedVersion: 2
         x: 64
@@ -816,14 +728,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49eaaeabf9bfd454f83db2e63736055a
-      internalID: -1168405149
+      spriteID: 98fdd9f7dfcf26b419a110419b6d8213
+      internalID: -2141914084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_33
+      name: TileMapIntro_29
       rect:
         serializedVersion: 2
         x: 96
@@ -838,14 +750,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29771d1cfaecdd14aab6ce32f975413f
-      internalID: -1706004944
+      spriteID: ee7292e6685eecc49a365de91ddc8efd
+      internalID: -110591756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_34
+      name: TileMapIntro_30
       rect:
         serializedVersion: 2
         x: 128
@@ -860,14 +772,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0b7ca0206c2ef44d98ef63f92681fd4
-      internalID: 1418612404
+      spriteID: 883912901ced2c947bf1c9edc89642be
+      internalID: -1297200074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_35
+      name: TileMapIntro_31
       rect:
         serializedVersion: 2
         x: 160
@@ -882,18 +794,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8a69c6f254a76f43afbd076993c765e
-      internalID: 1031488270
+      spriteID: d4e20978eb64e154b8f74fc03b331307
+      internalID: 1674711507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_36
+      name: TileMapIntro_32
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 192
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -904,18 +816,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b5ded81b9fbc0540af7ea8d5e3ad265
-      internalID: 726780220
+      spriteID: 0ad6dc2004cd47a47b0d0b40e0cdf31b
+      internalID: -1215159323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_37
+      name: TileMapIntro_33
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 224
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -926,18 +838,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d74316511f873cf4fa586aa5b3890345
-      internalID: 1560646848
+      spriteID: 10e947ab71b062a46a9f69dcc5ca5f2c
+      internalID: -1720277320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_38
+      name: TileMapIntro_34
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 256
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -948,14 +860,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 370d53f46a5146d418a6f50980ebca42
-      internalID: -163159804
+      spriteID: a523624c04681334a9dbf5092fcaeb57
+      internalID: 2128345986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_39
+      name: TileMapIntro_35
       rect:
         serializedVersion: 2
         x: 96
@@ -970,14 +882,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8e6bd65265da9d41ade19f3bc3058f1
-      internalID: 1736421610
+      spriteID: 7c1133d7e465fbe4592be6b999b7df22
+      internalID: 1501913453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_40
+      name: TileMapIntro_36
       rect:
         serializedVersion: 2
         x: 128
@@ -992,14 +904,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c5bff01e3b396747a503faf24fc8638
-      internalID: 984638412
+      spriteID: 3b96cccd251fcf24ab8dae45050fd52d
+      internalID: -262966481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_02_41
+      name: TileMapIntro_37
       rect:
         serializedVersion: 2
         x: 160
@@ -1014,8 +926,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd378c0730d126e49bdac8724ab7fb81
-      internalID: 668969014
+      spriteID: 471638b42e4fe4f4cbbd7556e385204e
+      internalID: 1946471796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapIntro_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f41ef30119e07458281ff1c9c88439
+      internalID: 602881241
       vertices: []
       indices: 
       edges: []
@@ -1024,7 +958,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 91263a4dad17690409dab3864bf6c206
+    spriteID: 542c27e616ce5c849b2f780720ce80f5
     internalID: 0
     vertices: []
     indices: 
@@ -1036,48 +970,45 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ground_02_0: -1951977403
-      ground_02_1: 1691102432
-      ground_02_10: -334247780
-      ground_02_11: -30910523
-      ground_02_12: -2100239006
-      ground_02_13: 1460496926
-      ground_02_14: -416404534
-      ground_02_15: -2075773740
-      ground_02_16: 710818189
-      ground_02_17: 337597694
-      ground_02_18: 752975986
-      ground_02_19: 157455586
-      ground_02_2: 1666690758
-      ground_02_20: 1453143205
-      ground_02_21: 1422803650
-      ground_02_22: -1194790096
-      ground_02_23: 427692316
-      ground_02_24: -1786432873
-      ground_02_25: -463430792
-      ground_02_26: -1828298665
-      ground_02_27: 1558911821
-      ground_02_28: -1054850801
-      ground_02_29: -531829797
-      ground_02_3: 1447990023
-      ground_02_30: 866829337
-      ground_02_31: 2062509833
-      ground_02_32: -1168405149
-      ground_02_33: -1706004944
-      ground_02_34: 1418612404
-      ground_02_35: 1031488270
-      ground_02_36: 726780220
-      ground_02_37: 1560646848
-      ground_02_38: -163159804
-      ground_02_39: 1736421610
-      ground_02_4: 2038388565
-      ground_02_40: 984638412
-      ground_02_41: 668969014
-      ground_02_5: -743146580
-      ground_02_6: -1382136463
-      ground_02_7: 272981512
-      ground_02_8: -1079904009
-      ground_02_9: -554051361
+      TileMapIntro_0: 832233699
+      TileMapIntro_1: -1716515637
+      TileMapIntro_10: 1415464677
+      TileMapIntro_11: 552364083
+      TileMapIntro_12: -1181147724
+      TileMapIntro_13: -1830029453
+      TileMapIntro_14: -1735273559
+      TileMapIntro_15: 328685891
+      TileMapIntro_16: 441712234
+      TileMapIntro_17: 1126966387
+      TileMapIntro_18: -604531899
+      TileMapIntro_19: -2020507330
+      TileMapIntro_2: 567751271
+      TileMapIntro_20: -1517083556
+      TileMapIntro_21: 737397664
+      TileMapIntro_22: 1876751778
+      TileMapIntro_23: -743793571
+      TileMapIntro_24: -142289633
+      TileMapIntro_25: -1565511241
+      TileMapIntro_26: -233022244
+      TileMapIntro_27: -908288034
+      TileMapIntro_28: -2141914084
+      TileMapIntro_29: -110591756
+      TileMapIntro_3: -798029971
+      TileMapIntro_30: -1297200074
+      TileMapIntro_31: 1674711507
+      TileMapIntro_32: -1215159323
+      TileMapIntro_33: -1720277320
+      TileMapIntro_34: 2128345986
+      TileMapIntro_35: 1501913453
+      TileMapIntro_36: -262966481
+      TileMapIntro_37: 1946471796
+      TileMapIntro_38: 602881241
+      TileMapIntro_4: 445214836
+      TileMapIntro_5: -944924128
+      TileMapIntro_6: 1522868382
+      TileMapIntro_7: 9418709
+      TileMapIntro_8: 607030810
+      TileMapIntro_9: 1661240365
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
