@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f94ba8fe-969f-4831-a0ec-ba9e83cb45de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WisperingWoods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WisperingWoods/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialouge/Global.ink" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialouge/Global.ink" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialouge/Global.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialouge/Global.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +142,8 @@
       <workItem from="1780335954902" duration="383000" />
       <workItem from="1780399219645" duration="25550000" />
       <workItem from="1780559412408" duration="3225000" />
-      <workItem from="1780594987729" duration="438000" />
+      <workItem from="1780594987729" duration="2557000" />
+      <workItem from="1780725753517" duration="338000" />
     </task>
     <servers />
   </component>
