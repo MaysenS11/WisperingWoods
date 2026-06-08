@@ -4,26 +4,26 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     public static Vector2 Movement;
-    public PlayerInput PlayerInput;
+    private PlayerInput PlayerInput;
     private InputAction _moveAction;
 
     private Vector2 _moveDirection;
-    private bool _jumpPressed;
-    private bool _interactPressed;
-    private bool _submitPressed;
-    private bool _escPressed;
+    //private bool _jumpPressed;
+    //private bool _interactPressed;
+    //private bool _submitPressed;
+    //private bool _escPressed;
     
     private static InputManager _instance;
 
     private void Awake()
     {
+        PlayerInput = GameEventManager.Instance.PlayerInput;
         if (_instance != null)
         {
             Debug.LogError("There can only be one instance of InputManager");
         }
         _instance = this;
         _moveAction = PlayerInput.actions["Move"];
-        PlayerInput = GetComponent<PlayerInput>();
     }
 
     public static InputManager GetInstance()
@@ -47,7 +47,7 @@ public class InputManager : MonoBehaviour
             _moveDirection = context.ReadValue<Vector2>();
         }
     }
-    public void JumpPressed(InputAction.CallbackContext context)
+    /*public void JumpPressed(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
@@ -90,5 +90,5 @@ public class InputManager : MonoBehaviour
         {
             _escPressed = false;
         }
-    }
+    }*/
 }

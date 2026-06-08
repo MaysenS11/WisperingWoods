@@ -8,9 +8,8 @@ public class GameEventManager : MonoBehaviour
 
     public static Enum gameState;
     
-    public PlayerInput PlayerInput;
-    
     public InputEvents inputEvents;
+    public PlayerInput PlayerInput;
 
     void Awake()
     {
@@ -29,7 +28,11 @@ public class GameEventManager : MonoBehaviour
     {
         if (PlayerInput.actions["Interact"].triggered)
         {
-            Debug.Log("Interacted");
+            Instance.inputEvents.InteractPressed();
+        }
+        if (PlayerInput.actions["Esc"].WasPressedThisFrame())
+        {
+            Instance.inputEvents.EscPressed();
         }
         
         gameState = inputEvents.gameState;

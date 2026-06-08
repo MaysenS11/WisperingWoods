@@ -21,10 +21,10 @@ public class InputEvents
         OnInteractPressed?.Invoke(gameState);
     }
     
-    public event Action OnCancelPressed;
-    public void CancelPressed()
+    public event Action OnEscPressed;
+    public void EscPressed()
     {
-        OnCancelPressed?.Invoke();
+        OnEscPressed?.Invoke();
     }
     
     public event Action<string> OnControlSchemeChanged;

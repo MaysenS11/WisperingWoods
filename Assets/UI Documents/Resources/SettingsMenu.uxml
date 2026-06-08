@@ -1,0 +1,3 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Image source="project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-6527069497977903076&amp;guid=837f0c41faaad2d43ae924afbf43533b&amp;type=3#console.warnicon@2x"/>
+</ui:UXML>
