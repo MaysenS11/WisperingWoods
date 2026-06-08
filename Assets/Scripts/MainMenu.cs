@@ -4,14 +4,14 @@ using UnityEngine.UIElements;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] UIDocument mainMenuDocument;
+    /*[SerializeField] UIDocument mainMenuDocument;
 
     private Button StartButton;
     private Button OptionsButton;
     private Button CreditsButton;
     private Button QuitButton;
 
-    private void Awake()
+    void Awake()
     {
         VisualElement root = mainMenuDocument.rootVisualElement;
         
@@ -26,23 +26,23 @@ public class MainMenu : MonoBehaviour
         QuitButton.clickable.clicked += QuitGame;
     }
 
-    private void StartGame()
+    void StartGame()
     {
         SceneManager.LoadScene("Level");
     }
     
-    private void OpenOptions()
+    void OpenOptions()
     {
         print("Open Options");
     }
     
-    private void OpenCredits()
+    void OpenCredits()
     {
         print("Open Credits");
     }
     
-    private void QuitGame()
+    void QuitGame()
     {
         Application.Quit();
-    }
+    }*/
 }
