@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    private bool _canInteract;
+    /*private bool _canInteract;
     void OnEnable()
     {
         GameEventManager.Instance.inputEvents.OnInteractPressed += InteractPressed;
@@ -28,7 +28,7 @@ public abstract class Interactable : MonoBehaviour
         }
     }
 
-    public abstract void Interact();
+    public abstract void Interact();*/
 }
 
 

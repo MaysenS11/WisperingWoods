@@ -34,6 +34,10 @@ public class GameEventManager : MonoBehaviour
         {
             Instance.inputEvents.EscPressed();
         }
+        if (PlayerInput.actions["Submit"].triggered)
+        {
+            Instance.inputEvents.SubmitPressed();
+        }
         
         gameState = inputEvents.gameState;
     }

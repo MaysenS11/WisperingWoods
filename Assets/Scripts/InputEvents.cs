@@ -15,10 +15,17 @@ public class InputEvents
 
     
     //Initialize InputEventActions
-    public event Action<GameState> OnInteractPressed;
+    public event Action OnInteractPressed;
     public void InteractPressed()
     {
-        OnInteractPressed?.Invoke(gameState);
+        OnInteractPressed?.Invoke();
+    }
+    
+    public event Action<GameState> OnSubmitPressed;
+
+    public void SubmitPressed()
+    {
+        OnSubmitPressed?.Invoke(gameState);
     }
     
     public event Action OnEscPressed;
