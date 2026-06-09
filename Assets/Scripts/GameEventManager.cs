@@ -5,9 +5,6 @@ using UnityEngine.InputSystem;
 public class GameEventManager : MonoBehaviour
 {
     public static GameEventManager Instance { get; private set; }
-
-    public static Enum gameState;
-    
     public InputEvents inputEvents;
     public PlayerInput PlayerInput;
 
@@ -38,7 +35,5 @@ public class GameEventManager : MonoBehaviour
         {
             Instance.inputEvents.SubmitPressed();
         }
-        
-        gameState = inputEvents.gameState;
     }
 }

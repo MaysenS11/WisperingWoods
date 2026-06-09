@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 
 public class MenuManager : MonoBehaviour
 {
+    public static MenuManager Instance { get; private set; }
+
     public UIDocument ingame;
     public UIDocument dialouge;
     public UIDocument pause;
@@ -34,6 +36,13 @@ public class MenuManager : MonoBehaviour
 
     void Awake()
     {
+        if (Instance != null)
+        {
+            Debug.LogError("There can only be one instance of MenuManager");
+        }
+
+        Instance = this;
+
         _menus[MenuState.Ingame] = ingame;
         _menus[MenuState.Dialouge] = dialouge;
         _menus[MenuState.MainMenu] = mainMenu;

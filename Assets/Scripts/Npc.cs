@@ -11,26 +11,23 @@ public class Npc : MonoBehaviour
         GameEventManager.Instance.inputEvents.OnInteractPressed += Interact;
         GameEventManager.Instance.inputEvents.OnSubmitPressed += Submit;
     }
-
     void Interact()
     {
-        //start dialouge
-    }
-    void Submit(GameState gameState)
-    {
-        if(!gameState.Equals(GameState.DIALOUGE))
+        if (_canInteract)
         {
-            return;
+            MenuManager.Instance.SetMenu(MenuManager.MenuState.Dialouge);
         }
-        ContinueOrExitStory();
+    }
+    void Submit()
+    {
+        Debug.Log("Submit Pressed");
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         _canInteract = true;
     }
-
-    void ContinueOrExitStory()
+    private void OnTriggerExit2D(Collider2D other)
     {
-        
+        _canInteract = false;
     }
 }
