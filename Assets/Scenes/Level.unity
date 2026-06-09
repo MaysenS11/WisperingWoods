@@ -123130,6 +123130,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6df83598c6503d24dbf022896764c780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuManager
+  ingame: {fileID: 344788020}
+  dialouge: {fileID: 1063765059}
+  pause: {fileID: 760636877}
+  mainMenu: {fileID: 1160851003}
+  settings: {fileID: 1147584746}
+  controls: {fileID: 1071816912}
 --- !u!1001 &1736255832
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -4,20 +4,20 @@ using UnityEngine.Assertions;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-public class PauseMenu : MenuManager
+public class PauseMenu : MonoBehaviour
 {
-   private void Awake()
-   {
-      Assert.IsTrue(this.enabled);
-      _parent = transform.parent.gameObject.TryGetComponent<MenuManager>(out var menuManager) ? menuManager : null;
-   }
-   
    private Button _resumeButton;
    private Button _settingsButton;
    private Button _controlsButton;
    private Button _quitButton;
 
    private MenuManager _parent;
+   
+   private void Awake()
+   {
+      Assert.IsTrue(this.enabled);
+      _parent = transform.parent.gameObject.TryGetComponent<MenuManager>(out var menuManager) ? menuManager : null;
+   }
 
    void OnEnable()
    {
@@ -35,16 +35,15 @@ public class PauseMenu : MenuManager
 
    void ResumeClicked(ClickEvent evt)
    {
-      Debug.Log("ResumeClicked");
       _parent.EscPressed();
    }
    void SettingsClicked(ClickEvent evt)
    {
-      _parent.ButtonMenu("SettingsMenuUI");
+      _parent.SetMenu(MenuManager.MenuState.Settings);
    }
    void ControlsClicked(ClickEvent evt)
    {
-      _parent.ButtonMenu("ControlsMenuUI");
+      _parent.SetMenu(MenuManager.MenuState.Controls);
    }
    void QuitClicked(ClickEvent evt)
    {

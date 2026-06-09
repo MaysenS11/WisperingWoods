@@ -6,35 +6,35 @@ using UnityEngine.UIElements;
 
 public class MenuManager : MonoBehaviour
 {
-    private List<UIDocument> _uiAssets;
-    private UIDocument _ingame;
-    private UIDocument _dialouge;
-    private UIDocument _pause;
-    private UIDocument _mainMenu;
-    private UIDocument _settings;
-    private UIDocument _controls;
-    private string _currentUI;
+    public UIDocument ingame;
+    public UIDocument dialouge;
+    public UIDocument pause;
+    public UIDocument mainMenu;
+    public UIDocument settings;
+    public UIDocument controls;
+    private MenuState _currentUI;
+    private Dictionary<MenuState, UIDocument> _menus = new Dictionary<MenuState, UIDocument>();
 
-    private VisualElement _pauseRoot;
+    public enum MenuState
+    {
+        Ingame,
+        Dialouge,
+        Pause,
+        MainMenu,
+        Settings,
+        Controls
+    }
 
     void Awake()
     {
-        _uiAssets = new List<UIDocument>();
-        foreach (var UI in GetComponentsInChildren<UIDocument>(true))
-        {
-            _uiAssets.Add(UI);
-        }
-        //Assigning the UI assets to variables for easier access
-        _ingame = _uiAssets[0];
-        _dialouge = _uiAssets[1];
-        _pause = _uiAssets[2];
-        _mainMenu = _uiAssets[3];
-        _settings = _uiAssets[4];
-        _controls = _uiAssets[5];
-        
-        
-        _currentUI = _ingame.name;
-        SwitchMenu();
+        _menus[MenuState.Ingame] = ingame;
+        _menus[MenuState.Dialouge] = dialouge;
+        _menus[MenuState.Pause] = pause;
+        _menus[MenuState.MainMenu] = mainMenu;
+        _menus[MenuState.Settings] = settings;
+        _menus[MenuState.Controls] = controls;
+
+        SetMenu(MenuState.Ingame);
     }
 
     void OnEnable()
@@ -47,53 +47,31 @@ public class MenuManager : MonoBehaviour
         GameEventManager.Instance.inputEvents.OnEscPressed -= EscPressed;
     }
 
-    void SwitchMenu()
-    {
-        foreach (UIDocument asset in _uiAssets)
-        {
-            if (asset.name != _currentUI)
-            {
-                asset.gameObject.SetActive(false);
-            }
-        }
-    }
-
     public void EscPressed()
     {
-        Debug.Log(_currentUI);
-        if (_currentUI == _ingame.name && Time.timeScale == 1 || _currentUI == _dialouge.name)
-        {
-            EnableMenu(_pause);
+        if (_currentUI == MenuState.Ingame || _currentUI == MenuState.Dialouge) {
+            SetMenu(MenuState.Pause);
             Time.timeScale = 0;
         }
-        else if (Time.timeScale == 0)
+        else if (_currentUI == MenuState.Pause)
         {
-            EnableMenu(_ingame);
+            SetMenu(MenuState.Ingame);
             Time.timeScale = 1;
         }
     }
 
-    void EnableMenu(UIDocument asset)
+    public void SetMenu(MenuState menu)
     {
-        Debug.Log(asset.name);
-        _currentUI = asset.name;
-        asset.gameObject.SetActive(true);
-        VisualElement root = asset.rootVisualElement;
-        root.SetEnabled(true);
-        SwitchMenu();
-    }
-
-    public void ButtonMenu(string menuName)
-    {
-        foreach (UIDocument asset in _uiAssets)
+        _currentUI = menu;
+        foreach (var keyValuePair in _menus)
         {
-            if (asset.name == menuName)
+            if (keyValuePair.Key != _currentUI)
             {
-                EnableMenu(asset);
+                keyValuePair.Value.gameObject.SetActive(false);
             }
             else
             {
-                Debug.Log($"['{menuName}'] vs ['{asset.name}']");
+                keyValuePair.Value.gameObject.SetActive(true);
             }
         }
     }
