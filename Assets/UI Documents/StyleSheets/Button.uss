@@ -9,6 +9,8 @@
     -unity-text-align: middle-center;
     white-space: normal;
     text-overflow: clip;
+    opacity: 1;
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
 }
 
 .Button:hover {
@@ -29,4 +31,13 @@
     -unity-text-align: middle-center;
     white-space: normal;
     text-overflow: clip;
+    border-left-color: rgba(0, 0, 0, 0);
 }
+
+
+
+
+
+
+
+

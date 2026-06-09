@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f94ba8fe-969f-4831-a0ec-ba9e83cb45de" name="Changes" comment="" />
+    <list default="true" id="f94ba8fe-969f-4831-a0ec-ba9e83cb45de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WisperingWoods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WisperingWoods/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/candle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/candle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/wood.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/wood.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Documents/Resources/ControlsMenu.uxml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Documents/Resources/ControlsMenu.uxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Documents/StyleSheets/Button.uss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Documents/StyleSheets/Button.uss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Documents/StyleSheets/Slider.uss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Documents/StyleSheets/Slider.uss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
