@@ -93,7 +93,7 @@ public class MenuManager : MonoBehaviour
             }
             else
             {
-                Debug.Log(menuName + " " + asset.name);
+                Debug.Log($"['{menuName}'] vs ['{asset.name}']");
             }
         }
     }
