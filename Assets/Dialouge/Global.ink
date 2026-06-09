@@ -29,6 +29,7 @@ I haven't learned enough about this place to be able to leave just yet.
 -> DONE
 
 === State_2 ===
+~ name = "Char"
 Hey, sorry to bother you, but may I ask what you are doing here?
 ~ name = "NPC"
 I could ask you the same question. 

@@ -152,3 +152,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemSO: {fileID: 11400000, guid: 48bea283605f63b49acb56f84f4c46fa, type: 2}
+  _questName: wood_quest

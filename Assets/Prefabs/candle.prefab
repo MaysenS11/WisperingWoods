@@ -152,3 +152,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemSO: {fileID: 11400000, guid: 7664060afa078cd46a631b96d0ad2ac3, type: 2}
+  _questName: candle_quest

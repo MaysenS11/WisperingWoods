@@ -4,18 +4,19 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public ItemSO itemSO;
+    [SerializeField] private string _questName;
+
+    void Start()
+    {
+        GameEventManager.Instance.gameObject.GetComponent<QuestManager>();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         //AddListenerSubmit += Collect;
-        if (itemSO.canCollect)
+        if (QuestManager.Instance.IsQuestInProgress(_questName))
         {
             Collect();
-        }
-        else
-        {
-            //invokeDisplayCollectLater
-            Collect(); //DebugOnly
         }
     }
     void Collect()

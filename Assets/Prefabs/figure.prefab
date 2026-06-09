@@ -152,3 +152,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemSO: {fileID: 11400000, guid: d5d134c87aaa61140aabc1ff0744bedc, type: 2}
+  _questName: reliquary_quest
