@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f94ba8fe-969f-4831-a0ec-ba9e83cb45de" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WisperingWoods/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WisperingWoods/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Npc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Npc.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnusedScripts/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnusedScripts/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UnusedScripts/ItemInstance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UnusedScripts/ItemInstance.cs" afterDir="false" />
-    </list>
+    <list default="true" id="f94ba8fe-969f-4831-a0ec-ba9e83cb45de" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
