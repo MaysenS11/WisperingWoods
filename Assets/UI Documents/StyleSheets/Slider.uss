@@ -1,3 +1,20 @@
 :root {
+}
 
+Slider Label {
+    display: none;
+}
+
+Slider #unity-drag-container {
+    background-image: url("project://database/Assets/Sprites/UI/Slider-Grau_Fill.png?fileID=21300000&guid=fc11346ac200a0f4cb2af16996dee1f6&type=3#Slider-Grau_Fill");
+}
+
+Slider #unity-tracker {
+    flex-grow: 1;
+    top: 0;
+}
+
+Slider #unity-dragger {
+    background-image: url("project://database/Assets/Sprites/UI/Slider_Knob.png?fileID=21300000&guid=ea94b5165487472479dc1afb5f33b600&type=3#Slider_Knob");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
 }
