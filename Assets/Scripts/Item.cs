@@ -18,6 +18,11 @@ public class Item : MonoBehaviour
         {
             Collect();
         }
+        else
+        {
+            MenuManager.Instance.SetMenu(MenuManager.MenuState.Dialouge);
+            DialogueManager.Instance.StartDialogue("State_7");
+        }
     }
     void Collect()
     {

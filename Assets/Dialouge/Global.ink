@@ -180,5 +180,6 @@ Why should I do that? Your soul is mine now.
 -> END
 
 === State_7 ===
+~ name = "Char"
 There is no need for this right now
--> DONE
+-> END
