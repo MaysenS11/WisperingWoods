@@ -1,4 +1,10 @@
 VAR name = ""
+VAR item_wood = 0
+VAR item_figure = 0
+VAR item_candle = 0
+VAR q_wood_quest = 0 // 0: NotStarted, 1: InProgress, 2: Completed
+VAR q_reliquary_quest = 0
+VAR q_candle_quest = 0
 
 === State_0 ===
 ~ name = "Char"
@@ -45,19 +51,54 @@ Maybe I can help? It'll be fixed faster.
 You would really do that? That would be so amazing!
 Could you start by collecting some wood and bringing it here?
 ~ name = "Char"
-Yes, for sure, I'll be right back
+Yes, for sure, I'll be right back # QUEST:wood_quest:START
+~ q_wood_quest = 1
 -> DONE
+
+=== State_2_Interact ===
+{ 
+    - q_candle_quest == 2:
+        -> State_6
+    - q_candle_quest == 1 && item_candle >= 2:
+        -> State_5
+    - q_candle_quest == 1:
+        -> State_4_1
+    - q_reliquary_quest == 1 && item_figure >= 1:
+        -> State_4
+    - q_reliquary_quest == 1:
+        {
+            - item_figure >= 1:
+                -> State_3_2
+            - else:
+                -> State_3_1
+        }
+    - q_wood_quest == 2:
+        {
+            - item_figure >= 1:
+                -> State_3_2
+            - else:
+                -> State_3_1
+        }
+    - q_wood_quest == 1 && item_wood >= 4:
+        -> State_3
+    - q_wood_quest == 1:
+        -> State_2_1
+    - else:
+        -> State_2
+}
 
 === State_2_1 ===
 ~ name = "NPC"
 It doesn't look like you gathered enough wood yet.
--> DONE
+-> END
 
 === State_3 ===
 ~ name = "Char"
 Is this enough?
 ~ name = "NPC"
 Absolutely, that helps a lot.
+# QUEST:wood_quest:COMPLETE
+~ q_wood_quest = 2
 The reliquary is missing, it should be in a big house near by.
 Would you bring that here as well?
 ~ name = "Char"
@@ -66,19 +107,20 @@ How do you know where it is?
 ~ name = "NPC"
 It's just a hunch.
 ~ name = "Char"
-Fair enough, I'll be right back.
--> DONE
+Fair enough, I'll be right back. # QUEST:reliquary_quest:START
+~ q_reliquary_quest = 1
+-> END
 
 === State_3_1 ===
 ~ name = "NPC"
 The reliquary spot is still empty...
--> DONE
+-> END
 
 === State_3_2 ===
 ~ name = "Char"
 It was actually in a big house. How did she know?
 This is starting to feel a little weird.
--> DONE
+-> END
 
 === State_4 ===
 ~ name = "Char"
@@ -86,6 +128,8 @@ I found it in a big house east from here.
 How did you know it was going to be there?
 ~ name = "NPC"
 I told you, it was just a hunch.
+# QUEST:reliquary_quest:COMPLETE
+~ q_reliquary_quest = 2
 Besides we're almost done. The only thing missing are two candles.
 I'm sure you will find some in the houses north.
 ~ name = "Char"
@@ -94,8 +138,9 @@ Is that another one of your hunches?
 Yes, don't overthink it. Just bring them here.
 ~ name = "Char"
 It's definitely weird now... 
-Whatever, let's find these candles and get of here.
--> DONE
+Whatever, let's find these candles and get of here. # QUEST:candle_quest:START
+~ q_candle_quest = 1
+-> END
 
 === State_4_1 ===
 ~ name = "NPC"
@@ -109,6 +154,8 @@ Finally! That took you a while.
 You could really show more graditute.
 I'm helping you out after all.
 ~ name = "NPC"
+# QUEST:candle_quest:COMPLETE
+~ q_candle_quest = 2
 Greatful towards a lowly human like you?
 I am a powerful demon spirit, we do not compare.
 It was your kind that destroyed my shrine, binding me to this spot.

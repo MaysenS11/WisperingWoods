@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class Npc : MonoBehaviour
 {
+    [SerializeField] private string startKnot;
     private bool _canInteract;
 
     void OnEnable()
     {
         GameEventManager.Instance.inputEvents.OnInteractPressed += Interact;
-        GameEventManager.Instance.inputEvents.OnSubmitPressed += Submit;
     }
-    void Interact()
+
+    void OnDisable()
     {
-        Debug.Log("Interact Pressed");
-        if (_canInteract)
+        if (GameEventManager.Instance != null && GameEventManager.Instance.inputEvents != null)
         {
-            Debug.Log("Interacting with NPC");
-            MenuManager.Instance.SetMenu(MenuManager.MenuState.Dialouge);
+            GameEventManager.Instance.inputEvents.OnInteractPressed -= Interact;
         }
     }
-    void Submit()
+
+    void Interact()
     {
-        Debug.Log("Submit Pressed");
+        if (_canInteract)
+        {
+            MenuManager.Instance.SetMenu(MenuManager.MenuState.Dialouge);
+            DialogueManager.Instance.StartDialogue(startKnot);
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
