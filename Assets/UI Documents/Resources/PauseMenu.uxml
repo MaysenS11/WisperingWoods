@@ -1,25 +1,11 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Documents/StyleSheets/Button.uss?fileID=7433441132597879392&amp;guid=41c8e0a22b2d7914bb2f653b5be56a81&amp;type=3#Button"/>
+    <ui:Image source="project://database/Assets/Sprites/UI/PauseBox_left.png?fileID=2800000&amp;guid=1d07fbe63122e1545a1f66fcf4a3c4a3&amp;type=3#PauseBox_left" style="align-self: flex-start; position: absolute; justify-content: flex-start; top: 200px; scale: 1.2 1.2; left: 135px; opacity: 0.5;"/>
     <ui:VisualElement style="flex-grow: 1; -unity-font-definition: url(&quot;project://database/Assets/Font/Kabel_Regular.ttf?fileID=12800000&amp;guid=7e6037f3fb6824a4fa9d6f197d8131c6&amp;type=3#Kabel_Regular&quot;); color: rgb(255, 255, 255); font-size: 25px; width: 30%; height: 100%; align-self: auto; -unity-text-align: upper-left; justify-content: center; align-content: center; align-items: center; margin-left: 30px; margin-top: 100px;">
-        <ui:VisualElement style="flex-grow: 1; justify-content: center; align-self: flex-start; translate: -20px 50px; display: none;">
-            <ui:Label text="Pause" style="align-self: center; font-size: 45px;"/>
-            <ui:Button focusable="false" text="Resume" name="Button" style="background-image: url(&quot;project://database/Assets/Sprites/Zeichenflache_2.png?fileID=2800000&amp;guid=a2a0086f6bb045e498767aaf4ef3f75b&amp;type=3#Zeichenflache_2&quot;); width: 721px; height: 229px; -unity-background-image-tint-color: rgba(255, 255, 255, 0.886); background-color: rgba(188, 188, 188, 0); background-size: 40% 60%; margin-bottom: -40px; font-size: 22px;"/>
-            <ui:Button focusable="false" text="Settings" style="background-image: url(&quot;project://database/Assets/Sprites/Zeichenflache_2.png?fileID=2800000&amp;guid=a2a0086f6bb045e498767aaf4ef3f75b&amp;type=3#Zeichenflache_2&quot;); width: 721px; height: 229px; -unity-background-image-tint-color: rgba(255, 255, 255, 0.886); background-color: rgba(188, 188, 188, 0); background-size: 40% 60%; margin-bottom: -40px; font-size: 22px;"/>
-            <ui:Button focusable="false" text="Controls" style="background-image: url(&quot;project://database/Assets/Sprites/Zeichenflache_2.png?fileID=2800000&amp;guid=a2a0086f6bb045e498767aaf4ef3f75b&amp;type=3#Zeichenflache_2&quot;); width: 721px; height: 229px; -unity-background-image-tint-color: rgba(255, 255, 255, 0.886); background-color: rgba(188, 188, 188, 0); background-size: 40% 60%; margin-top: -40px; margin-bottom: 0; font-size: 22px;"/>
-            <ui:Button focusable="false" text="Quit" style="background-image: url(&quot;project://database/Assets/Sprites/Zeichenflache_2.png?fileID=2800000&amp;guid=a2a0086f6bb045e498767aaf4ef3f75b&amp;type=3#Zeichenflache_2&quot;); width: 721px; height: 229px; -unity-background-image-tint-color: rgba(255, 255, 255, 0.886); background-color: rgba(188, 188, 188, 0); background-size: 40% 60%; font-size: 22px; margin-top: -40px;"/>
-        </ui:VisualElement>
         <ui:Label text="Pause Menu" style="font-size: 35px; margin-bottom: 20px;"/>
-        <ui:Button text="" name="resumeButton" class="Button">
-            <ui:Label text="Resume" style="-unity-font-definition: url(&quot;project://database/Assets/Font/Kabel_Regular.ttf?fileID=12800000&amp;guid=7e6037f3fb6824a4fa9d6f197d8131c6&amp;type=3#Kabel_Regular&quot;); align-self: auto; position: relative; scale: 2 1.35; align-content: auto; justify-content: center; align-items: auto; margin-top: 6px; font-size: 25px;"/>
-        </ui:Button>
-        <ui:Button text="" name="settingsButton" class="Button" style="margin-bottom: -45px;">
-            <ui:Label text="Settings" style="-unity-font-definition: url(&quot;project://database/Assets/Font/Kabel_Regular.ttf?fileID=12800000&amp;guid=7e6037f3fb6824a4fa9d6f197d8131c6&amp;type=3#Kabel_Regular&quot;); align-self: auto; position: relative; scale: 2 1.35; align-content: auto; justify-content: center; align-items: auto; margin-top: 6px; font-size: 25px;"/>
-        </ui:Button>
-        <ui:Button text="" name="controlsButton" class="Button" style="margin-top: -45px;">
-            <ui:Label text="Controls" style="-unity-font-definition: url(&quot;project://database/Assets/Font/Kabel_Regular.ttf?fileID=12800000&amp;guid=7e6037f3fb6824a4fa9d6f197d8131c6&amp;type=3#Kabel_Regular&quot;); align-self: auto; position: relative; scale: 2 1.35; align-content: auto; justify-content: center; align-items: auto; margin-top: 6px; font-size: 25px;"/>
-        </ui:Button>
-        <ui:Button text="" name="quitButton" class="Button">
-            <ui:Label text="Quit" style="-unity-font-definition: url(&quot;project://database/Assets/Font/Kabel_Regular.ttf?fileID=12800000&amp;guid=7e6037f3fb6824a4fa9d6f197d8131c6&amp;type=3#Kabel_Regular&quot;); align-self: auto; position: relative; scale: 2 1.35; align-content: auto; justify-content: center; align-items: auto; margin-top: 6px; font-size: 25px;"/>
-        </ui:Button>
+        <ui:Button text="Resume" name="resumeButton" class="Button"/>
+        <ui:Button text="Setting" name="settingsButton" class="Button"/>
+        <ui:Button text="Controls" name="controlsButton" class="Button"/>
+        <ui:Button text="Quit" name="quitButton" class="Button"/>
     </ui:VisualElement>
 </ui:UXML>
