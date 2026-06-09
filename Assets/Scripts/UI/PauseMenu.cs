@@ -39,11 +39,11 @@ public class PauseMenu : MonoBehaviour
    }
    void SettingsClicked(ClickEvent evt)
    {
-      _parent.SetMenu(MenuManager.MenuState.Settings);
+      _parent.SetPauseMenu(MenuManager.PauseMenuState.Settings);
    }
    void ControlsClicked(ClickEvent evt)
    {
-      _parent.SetMenu(MenuManager.MenuState.Controls);
+      _parent.SetPauseMenu(MenuManager.PauseMenuState.Controls);
    }
    void QuitClicked(ClickEvent evt)
    {

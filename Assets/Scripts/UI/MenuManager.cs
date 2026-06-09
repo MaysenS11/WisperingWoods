@@ -13,14 +13,21 @@ public class MenuManager : MonoBehaviour
     public UIDocument settings;
     public UIDocument controls;
     private MenuState _currentUI;
+    private PauseMenuState _currentPauseMenuState;
     private Dictionary<MenuState, UIDocument> _menus = new Dictionary<MenuState, UIDocument>();
+    private Dictionary<PauseMenuState, UIDocument> _pauseMenus = new Dictionary<PauseMenuState, UIDocument>();
 
     public enum MenuState
     {
         Ingame,
         Dialouge,
-        Pause,
-        MainMenu,
+        MainMenu
+    }
+
+    public enum PauseMenuState
+    {
+        Disabled,
+        Main,
         Settings,
         Controls
     }
@@ -29,12 +36,15 @@ public class MenuManager : MonoBehaviour
     {
         _menus[MenuState.Ingame] = ingame;
         _menus[MenuState.Dialouge] = dialouge;
-        _menus[MenuState.Pause] = pause;
         _menus[MenuState.MainMenu] = mainMenu;
-        _menus[MenuState.Settings] = settings;
-        _menus[MenuState.Controls] = controls;
+
+        _pauseMenus[PauseMenuState.Disabled] = null;
+        _pauseMenus[PauseMenuState.Main] = pause;
+        _pauseMenus[PauseMenuState.Settings] = settings;
+        _pauseMenus[PauseMenuState.Controls] = controls;
 
         SetMenu(MenuState.Ingame);
+        SetPauseMenu(PauseMenuState.Disabled);
     }
 
     void OnEnable()
@@ -49,14 +59,12 @@ public class MenuManager : MonoBehaviour
 
     public void EscPressed()
     {
-        if (_currentUI == MenuState.Ingame || _currentUI == MenuState.Dialouge) {
-            SetMenu(MenuState.Pause);
+        if (_currentPauseMenuState == PauseMenuState.Disabled) {
             Time.timeScale = 0;
-        }
-        else if (_currentUI == MenuState.Pause)
-        {
-            SetMenu(MenuState.Ingame);
+            SetPauseMenu(PauseMenuState.Main);
+        } else {
             Time.timeScale = 1;
+            SetPauseMenu(PauseMenuState.Disabled);
         }
     }
 
@@ -72,6 +80,28 @@ public class MenuManager : MonoBehaviour
             else
             {
                 keyValuePair.Value.gameObject.SetActive(true);
+            }
+        }
+    }
+
+    public void SetPauseMenu(PauseMenuState menu)
+    {
+        _currentPauseMenuState = menu;
+        foreach (var keyValuePair in _pauseMenus)
+        {
+            if (keyValuePair.Key != menu)
+            {
+                if (keyValuePair.Value != null)
+                {
+                    keyValuePair.Value.gameObject.SetActive(false);
+                }
+            }
+            else
+            {
+                if (keyValuePair.Value != null)
+                {
+                    keyValuePair.Value.gameObject.SetActive(true);
+                }
             }
         }
     }
