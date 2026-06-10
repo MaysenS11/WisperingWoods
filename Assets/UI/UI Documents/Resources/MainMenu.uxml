@@ -2,10 +2,10 @@
     <Style src="project://database/Assets/UI/UI%20Documents/StyleSheets/Button.uss?fileID=7433441132597879392&amp;guid=41c8e0a22b2d7914bb2f653b5be56a81&amp;type=3#Button"/>
     <ui:VisualElement name="Backround" style="flex-grow: 1; background-color: rgb(119, 136, 153); align-items: center; align-content: center; justify-content: center;">
         <ui:GroupBox name="GroupBox" style="justify-content: center; align-content: center; align-self: flex-start; align-items: center; translate: 200px 0;">
-            <ui:Button text="Start" name="startButton" class="Button"/>
-            <ui:Button text="Settings" name="settingsButton" class="Button"/>
-            <ui:Button text="Credits" name="creditsButton" class="Button"/>
-            <ui:Button text="Quit" name="quitButton" class="Button"/>
+            <ui:Button text="Start" name="startButton" class="Button" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"/>
+            <ui:Button text="Settings" name="settingsButton" class="Button" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"/>
+            <ui:Button text="Credits" name="creditsButton" class="Button" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"/>
+            <ui:Button text="Quit" name="quitButton" class="Button" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"/>
         </ui:GroupBox>
     </ui:VisualElement>
 </ui:UXML>

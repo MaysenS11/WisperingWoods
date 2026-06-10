@@ -1,6 +1,3 @@
-:root {
-}
-
 .Button {
     background-image: url("project://database/Assets/Sprites/UI/Buttons/Button_Menu_Normal.png?fileID=2800000&guid=ce6c0be899240e34d86cc4f0acbf3b6c&type=3#Button_Menu_Normal");
     background-color: rgba(0, 0, 0, 0);
@@ -16,7 +13,8 @@
     font-size: 25px;
 }
 
-.Button:hover {
+.Button:hover,
+.Button:focus {
     background-image: url("project://database/Assets/Sprites/UI/Buttons/Button_Menu_Hover.png?fileID=2800000&guid=19734f6979ccecc4283e70c50bd20ee9&type=3#Button_Menu_Hover");
     background-color: rgba(0, 0, 0, 0);
     width: 354px;
