@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class ResumeButton : MonoBehaviour
+public class BackButton : MonoBehaviour
 {
     private MenuManager _parent;
     private void Awake()
@@ -12,11 +12,11 @@ public class ResumeButton : MonoBehaviour
     void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
-        Button _resumeButton = root.Q<Button>("resumeButton");
-        if (_resumeButton != null) _resumeButton.RegisterCallback<ClickEvent>(ResumeClicked);
+        Button _backButton = root.Q<Button>("backButton");
+        if (_backButton != null) _backButton.RegisterCallback<ClickEvent>(BackClicked);
     }
 
-    void ResumeClicked(ClickEvent evt)
+    void BackClicked(ClickEvent evt)
     {
         if (_parent.GetCurrentMenu() == MenuManager.MenuState.MainMenu) 
             _parent.SetPauseMenu(MenuManager.PauseMenuState.Disabled);

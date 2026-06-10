@@ -585,7 +585,7 @@ MonoBehaviour:
   houseInside: {fileID: 1856086423}
   destinationSpawnPoint: {fileID: 1078577483}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &69981208
 BoxCollider2D:
@@ -783,6 +783,184 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7287c62e2fe86a84581b299e53aed913, type: 3}
+--- !u!43 &207851682
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 12
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 0
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 0
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 0
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 0
+    _typelessdata: 
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_MeshUsageFlags: 0
+  m_CookingOptions: 30
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  'm_MeshMetrics[0]': 1
+  'm_MeshMetrics[1]': 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+  m_MeshLodInfo:
+    serializedVersion: 2
+    m_LodSelectionCurve:
+      serializedVersion: 1
+      m_LodSlope: 0
+      m_LodBias: 0
+    m_NumLevels: 1
+    m_SubMeshes:
+    - serializedVersion: 2
+      m_Levels:
+      - serializedVersion: 1
+        m_IndexStart: 0
+        m_IndexCount: 0
 --- !u!1 &238654711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1299,7 @@ MonoBehaviour:
   houseInside: {fileID: 834120911}
   destinationSpawnPoint: {fileID: 941675281}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &238654720
 BoxCollider2D:
@@ -4624,184 +4802,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1892708b833d8ca44b1a05ddf8beaba8, type: 3}
---- !u!43 &392593880
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 12
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 0
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 0
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 0
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 0
-    _typelessdata: 
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
-  m_MeshUsageFlags: 0
-  m_CookingOptions: 30
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  'm_MeshMetrics[0]': 1
-  'm_MeshMetrics[1]': 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
-  m_MeshLodInfo:
-    serializedVersion: 2
-    m_LodSelectionCurve:
-      serializedVersion: 1
-      m_LodSlope: 0
-      m_LodBias: 0
-    m_NumLevels: 1
-    m_SubMeshes:
-    - serializedVersion: 2
-      m_Levels:
-      - serializedVersion: 1
-        m_IndexStart: 0
-        m_IndexCount: 0
 --- !u!1 &405464847
 GameObject:
   m_ObjectHideFlags: 0
@@ -5633,7 +5633,7 @@ MonoBehaviour:
   houseInside: {fileID: 755597622}
   destinationSpawnPoint: {fileID: 1774287123}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &413347851
 BoxCollider2D:
@@ -19486,7 +19486,7 @@ MonoBehaviour:
   houseInside: {fileID: 1023269309}
   destinationSpawnPoint: {fileID: 661638275}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &1424507524
 BoxCollider2D:
@@ -20379,7 +20379,7 @@ MonoBehaviour:
   houseInside: {fileID: 1856086423}
   destinationSpawnPoint: {fileID: 513860457}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!1 &1570691310
 GameObject:
@@ -20735,7 +20735,7 @@ MonoBehaviour:
     rid: 2263501057841168546
   m_ShadowCastingSource: 2
   m_ShadowMesh:
-    m_Mesh: {fileID: 392593880}
+    m_Mesh: {fileID: 207851682}
     m_LocalBounds:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0, y: 0, z: 0}
@@ -21301,7 +21301,7 @@ MonoBehaviour:
   houseInside: {fileID: 1508091956}
   destinationSpawnPoint: {fileID: 852510787}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &1638749722
 BoxCollider2D:
@@ -21723,6 +21723,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1206799571}
   m_SourcePrefab: {fileID: 100100000, guid: 469e2d4dc67afda41946b5efbb43157d, type: 3}
+--- !u!114 &1647259905 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6333836002298849405, guid: 469e2d4dc67afda41946b5efbb43157d, type: 3}
+  m_PrefabInstance: {fileID: 1647259904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745627551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca891b9acc4115429eb93f661b265a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
 --- !u!1 &1655031605
 GameObject:
   m_ObjectHideFlags: 0
@@ -22195,7 +22206,7 @@ MonoBehaviour:
   houseInside: {fileID: 1023269309}
   destinationSpawnPoint: {fileID: 254890427}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!1 &1811255339
 GameObject:
@@ -23478,7 +23489,7 @@ MonoBehaviour:
   houseInside: {fileID: 1508091956}
   destinationSpawnPoint: {fileID: 1086437608}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &1916653932
 BoxCollider2D:
@@ -24038,7 +24049,7 @@ MonoBehaviour:
   houseInside: {fileID: 834120911}
   destinationSpawnPoint: {fileID: 506298716}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &2084994603
 BoxCollider2D:
@@ -24265,7 +24276,7 @@ MonoBehaviour:
   houseInside: {fileID: 755597622}
   destinationSpawnPoint: {fileID: 1969970139}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!1 &2104901846 stripped
 GameObject:
@@ -28079,6 +28090,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3102249969095013869, guid: 5041210afee1dc7448fab585cecf9e9c, type: 3}
+      propertyPath: movement
+      value: 
+      objectReference: {fileID: 1647259905}
     - target: {fileID: 5699896893824153444, guid: 5041210afee1dc7448fab585cecf9e9c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.03696

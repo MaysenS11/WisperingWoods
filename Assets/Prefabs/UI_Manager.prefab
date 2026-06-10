@@ -133,6 +133,7 @@ MonoBehaviour:
   controls: {fileID: 4069946284685653249}
   credits: {fileID: 4869669278817578529}
   transition: {fileID: 3193081403257516868}
+  movement: {fileID: 0}
 --- !u!1 &1318059104599169292
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2892403755755939785}
   - component: {fileID: 8044855624096773968}
-  - component: {fileID: 4062028900409489719}
+  - component: {fileID: 7116123069706325698}
   m_Layer: 0
   m_Name: SettingsMenuUI
   m_TagString: Untagged
@@ -189,7 +190,7 @@ MonoBehaviour:
   m_PivotReferenceSize: 0
   m_Pivot: 0
   m_WorldSpaceCollider: {fileID: 0}
---- !u!114 &4062028900409489719
+--- !u!114 &7116123069706325698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -198,9 +199,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1318059104599169292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3dca1236eb09504ebfea6d7f87e01e2, type: 3}
+  m_Script: {fileID: 11500000, guid: b58eb74708c090041810176f521b11e6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ResumeButton
+  m_EditorClassIdentifier: Assembly-CSharp::BackButton
 --- !u!1 &4891963139879188961
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9074522753815592143}
   - component: {fileID: 4869669278817578529}
-  - component: {fileID: 1555051989200070450}
+  - component: {fileID: 7346563284567934656}
   m_Layer: 0
   m_Name: CreditsMenuUI
   m_TagString: Untagged
@@ -325,7 +326,7 @@ MonoBehaviour:
   m_PivotReferenceSize: 0
   m_Pivot: 0
   m_WorldSpaceCollider: {fileID: 0}
---- !u!114 &1555051989200070450
+--- !u!114 &7346563284567934656
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -334,9 +335,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5603108259020359580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3dca1236eb09504ebfea6d7f87e01e2, type: 3}
+  m_Script: {fileID: 11500000, guid: b58eb74708c090041810176f521b11e6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ControlsMenu
+  m_EditorClassIdentifier: Assembly-CSharp::BackButton
 --- !u!1 &5683445687213217686
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,7 +490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 721138990783086332}
   - component: {fileID: 4069946284685653249}
-  - component: {fileID: 253130241678060239}
+  - component: {fileID: 4143124459072180579}
   m_Layer: 0
   m_Name: ControlsMenuUI
   m_TagString: Untagged
@@ -535,7 +536,7 @@ MonoBehaviour:
   m_PivotReferenceSize: 0
   m_Pivot: 0
   m_WorldSpaceCollider: {fileID: 0}
---- !u!114 &253130241678060239
+--- !u!114 &4143124459072180579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -544,9 +545,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7104216237941389810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3dca1236eb09504ebfea6d7f87e01e2, type: 3}
+  m_Script: {fileID: 11500000, guid: b58eb74708c090041810176f521b11e6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ControlsMenu
+  m_EditorClassIdentifier: Assembly-CSharp::BackButton
 --- !u!1 &8893611509827609885
 GameObject:
   m_ObjectHideFlags: 0
