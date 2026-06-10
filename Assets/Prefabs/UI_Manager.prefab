@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 2892403755755939785}
   - component: {fileID: 8044855624096773968}
   - component: {fileID: 7116123069706325698}
+  - component: {fileID: 6564904087353071220}
   m_Layer: 0
   m_Name: SettingsMenuUI
   m_TagString: Untagged
@@ -202,6 +203,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b58eb74708c090041810176f521b11e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BackButton
+--- !u!114 &6564904087353071220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318059104599169292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb43ba93de41ba409ffd19bda63ab01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingsMenu
+  menu: {fileID: 8044855624096773968}
 --- !u!1 &4891963139879188961
 GameObject:
   m_ObjectHideFlags: 0
