@@ -124,13 +124,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6df83598c6503d24dbf022896764c780, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuManager
+  startingMenu: 0
   ingame: {fileID: 1940787889947973535}
   dialouge: {fileID: 1998901082232249463}
   pause: {fileID: 8059629839224676360}
   mainMenu: {fileID: 5695640901621163012}
   settings: {fileID: 8044855624096773968}
   controls: {fileID: 4069946284685653249}
-  credits: {fileID: 0}
+  credits: {fileID: 4869669278817578529}
   transition: {fileID: 3193081403257516868}
 --- !u!1 &1318059104599169292
 GameObject:
