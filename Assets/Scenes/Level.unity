@@ -585,7 +585,7 @@ MonoBehaviour:
   houseInside: {fileID: 1856086423}
   destinationSpawnPoint: {fileID: 1078577483}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &69981208
 BoxCollider2D:
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   houseInside: {fileID: 834120911}
   destinationSpawnPoint: {fileID: 941675281}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &238654720
 BoxCollider2D:
@@ -2752,7 +2752,7 @@ MonoBehaviour:
   houseInside: {fileID: 755597622}
   destinationSpawnPoint: {fileID: 1774287123}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &413347851
 BoxCollider2D:
@@ -6735,6 +6735,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1206799574 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6333836002298849405, guid: 469e2d4dc67afda41946b5efbb43157d, type: 3}
+  m_PrefabInstance: {fileID: 1647259904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745627551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca891b9acc4115429eb93f661b265a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
 --- !u!1 &1242209281
 GameObject:
   m_ObjectHideFlags: 0
@@ -7556,7 +7567,7 @@ MonoBehaviour:
   houseInside: {fileID: 1023269309}
   destinationSpawnPoint: {fileID: 661638275}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &1424507524
 BoxCollider2D:
@@ -8449,7 +8460,7 @@ MonoBehaviour:
   houseInside: {fileID: 1856086423}
   destinationSpawnPoint: {fileID: 513860457}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!1 &1570691310
 GameObject:
@@ -9233,7 +9244,7 @@ MonoBehaviour:
   houseInside: {fileID: 1508091956}
   destinationSpawnPoint: {fileID: 852510787}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &1638749722
 BoxCollider2D:
@@ -10127,7 +10138,7 @@ MonoBehaviour:
   houseInside: {fileID: 1023269309}
   destinationSpawnPoint: {fileID: 254890427}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!1 &1811255339
 GameObject:
@@ -11410,7 +11421,7 @@ MonoBehaviour:
   houseInside: {fileID: 1508091956}
   destinationSpawnPoint: {fileID: 1086437608}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &1916653932
 BoxCollider2D:
@@ -11886,7 +11897,7 @@ MonoBehaviour:
   houseInside: {fileID: 834120911}
   destinationSpawnPoint: {fileID: 506298716}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &2084994603
 BoxCollider2D:
@@ -12113,7 +12124,7 @@ MonoBehaviour:
   houseInside: {fileID: 755597622}
   destinationSpawnPoint: {fileID: 1969970139}
   cameraFixed: {fileID: 476101054}
-  cameraDynamicComposer: {fileID: 0}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!1 &2116650913
 GameObject:
@@ -15916,6 +15927,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3102249969095013869, guid: 5041210afee1dc7448fab585cecf9e9c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 745627551}
+    - target: {fileID: 3102249969095013869, guid: 5041210afee1dc7448fab585cecf9e9c, type: 3}
+      propertyPath: movement
+      value: 
+      objectReference: {fileID: 1206799574}
     - target: {fileID: 5699896893824153444, guid: 5041210afee1dc7448fab585cecf9e9c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.03696

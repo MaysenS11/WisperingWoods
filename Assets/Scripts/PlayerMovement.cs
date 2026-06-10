@@ -43,4 +43,9 @@ public class PlayerMovement : MonoBehaviour
             _animator.SetFloat("LastInputY", _lastMovement.y);
         }
     }
+
+    private void OnDisable() {
+        _rb.linearVelocity = Vector2.zero;
+        _animator.SetBool("isWalking", false);
+    }
 }
