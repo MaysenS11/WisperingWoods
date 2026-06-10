@@ -21,6 +21,9 @@ public class MenuManager : MonoBehaviour
     public UIDocument credits;
     public UIDocument transition;
 
+    [Header("References")]
+    public PlayerMovement movement;
+
     private MenuState _currentUI;
     private PauseMenuState _currentPauseMenuState;
     private Dictionary<MenuState, UIDocument> _menus = new Dictionary<MenuState, UIDocument>();
@@ -121,6 +124,11 @@ public class MenuManager : MonoBehaviour
 
     public void SetMenu(MenuState menu)
     {
+        if (movement != null)
+        {
+            movement.enabled = menu != MenuState.Dialouge;
+        }
+
         _currentUI = menu;
         foreach (var keyValuePair in _menus)
         {
