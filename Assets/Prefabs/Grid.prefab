@@ -50648,13 +50648,13 @@ CompositeCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_GeometryType: 0
-  m_GenerationType: 0
+  m_GenerationType: 1
   m_EdgeRadius: 0
   m_ColliderPaths:
   - m_Collider: {fileID: 5873662529189335317}
@@ -51049,7 +51049,7 @@ CompositeCollider2D:
       - {x: 3.435484, y: 36.306423}
       - {x: 3.4355133, y: 34.98387}
   m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
+  m_OffsetDistance: 0.1
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 2766579079919198510}
 --- !u!61 &7882656675446237709
@@ -88980,7 +88980,7 @@ CompositeCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -89603,7 +89603,7 @@ CompositeCollider2D:
       - {x: 3.435484, y: 36.306423}
       - {x: 3.4355133, y: 34.98387}
   m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
+  m_OffsetDistance: 0.1
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 6808493411683833513}
 --- !u!61 &3508883808868880888
@@ -121975,7 +121975,7 @@ CompositeCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -122787,7 +122787,7 @@ CompositeCollider2D:
       - {x: 1.2741935, y: 36.145134}
       - {x: 1.2742229, y: 30.983871}
   m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
+  m_OffsetDistance: 0.1
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 7676208029652774219}
 --- !u!61 &7675521634073836030
