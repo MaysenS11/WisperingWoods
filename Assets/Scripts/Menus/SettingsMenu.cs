@@ -11,11 +11,18 @@ public class SettingsMenu : MonoBehaviour {
         var sfxSlider = root.Q<Slider>("sfxSlider");
         var sfxValue = root.Q<Label>("sfxValue");
 
+        musicValue.text = Mathf.RoundToInt(musicSlider.value).ToString();
+        sfxValue.text = Mathf.RoundToInt(sfxSlider.value).ToString();
+        SoundManager.Instance.SetMusicVolume(musicSlider.value / 100f);
+        SoundManager.Instance.SetSFXVolume(sfxSlider.value / 100f);
+
         musicSlider.RegisterValueChangedCallback(e => {
+            SoundManager.Instance.SetMusicVolume(e.newValue / 100f);
             musicValue.text = Mathf.RoundToInt(e.newValue).ToString();
         });
 
         sfxSlider.RegisterValueChangedCallback(e => {
+            SoundManager.Instance.SetSFXVolume(e.newValue / 100f);
             sfxValue.text = Mathf.RoundToInt(e.newValue).ToString();
         });
     }
