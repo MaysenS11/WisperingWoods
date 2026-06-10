@@ -1,0 +1,239 @@
+/* =================================================================
+   PanelCommon.uss
+   Shared panel styles — used by PauseMenu, ControlsMenu, CreditsMenu
+   and SettingsMenu (add this @import or <Style> reference to each).
+
+   Token values intentionally match SettingsMenu.uss so both sheets
+   can coexist without conflicts. If you ever merge them, just keep
+   the :root block from one file.
+   ================================================================= */
+
+:root {
+    --font-main: url("project://database/Assets/Font/Kabel_Regular.ttf?fileID=12800000&guid=7e6037f3fb6824a4fa9d6f197d8131c6&type=3#Kabel_Regular");
+    --color-white: rgb(255, 255, 255);
+    --color-white-dim: rgba(255, 255, 255, 0.55);
+    --color-white-faint: rgba(255, 255, 255, 0.15);
+    --color-accent: rgb(255, 220, 120);
+}
+
+/* ── Full-screen centring overlay ──────────────────────────── */
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* ── Panel card ────────────────────────────────────────────── */
+.panel {
+    width: 520px;
+    min-height: 480px;
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: rgba(255, 255, 255, 0.12);
+    -unity-overflow-clip-box: content-box;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+/* Wider variant for the Controls screen (image needs room) */
+.panel--wide {
+    width: 660px;
+    min-height: 560px;
+}
+
+/* Decorative 9-slice background, very faint */
+.panel-bg {
+    width: 100%;
+    height: 100%;
+}
+
+/* ── Content column ────────────────────────────────────────── */
+.content {
+    position: relative;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 40px 48px 36px 48px;
+}
+
+/* ── Title ─────────────────────────────────────────────────── */
+.title {
+    -unity-font-definition: var(--font-main);
+    font-size: 42px;
+    color: var(--color-white);
+    -unity-text-align: upper-center;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+}
+
+/* ── Divider ───────────────────────────────────────────────── */
+.divider {
+    height: 1px;
+    background-color: var(--color-white-faint);
+    margin-top: 4px;
+    margin-bottom: 32px;
+}
+
+/* ── Sliders and their labels ─────────────────────────────── */
+.sliders {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.slider-row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.slider-label {
+    -unity-font-definition: var(--font-main);
+    font-size: 22px;
+    color: var(--color-white-dim);
+    width: 80px;
+    -unity-text-align: middle-left;
+    flex-shrink: 0;
+}
+
+.slider-value {
+    -unity-font-definition: var(--font-main);
+    font-size: 18px;
+    color: var(--color-accent);
+    width: 38px;
+    -unity-text-align: middle-right;
+    flex-shrink: 0;
+}
+
+.slider {
+    flex-grow: 1;
+    margin-left: 12px;
+    margin-right: 8px;
+    height: 24px;
+}
+
+.slider > #unity-tracker {
+    background-color: var(--color-white-faint);
+    border-radius: 4px;
+    height: 6px;
+    border-width: 0;
+    margin-top: 9px;
+}
+
+.slider > #unity-tracker > #unity-fill {
+    background-color: var(--color-accent);
+    border-radius: 4px;
+}
+
+.slider > #unity-dragger {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    border-width: 2px;
+    border-color: var(--color-accent);
+    top: -8px;
+    -unity-background-image-tint-color: var(--color-white);
+}
+
+.slider > #unity-dragger:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-white);
+    scale: 1.15 1.15;
+}
+
+/* ── Flexible spacer ───────────────────────────────────────── */
+.spacer {
+    flex-grow: 1;
+    min-height: 20px;
+}
+
+/* ── Shared return / back button ───────────────────────────── */
+.return-btn {
+    align-self: center;
+    margin-bottom: 0;
+}
+
+
+/* =================================================================
+   PAUSE MENU — stacked button list
+   ================================================================= */
+
+.button-stack {
+    flex-direction: column;
+    align-items: center;
+    /* Negative margin compensates for Button.uss's built-in height so
+       the buttons look evenly spaced without extra gaps */
+    margin-top: -16px;
+}
+
+/* Each button in the stack needs no extra margin override —
+   Button.uss already handles sizing. We just tighten vertical gaps. */
+.menu-btn {
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
+
+
+/* =================================================================
+   CONTROLS MENU — controls diagram area
+   ================================================================= */
+
+.controls-image-area {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls-image {
+    /* ScaleToFit keeps the image proportional inside the panel */
+    -unity-background-scale-mode: scale-to-fit;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.controls-image--hidden {
+    display: none;
+}
+
+
+/* =================================================================
+   CREDITS MENU — role / name pairs
+   ================================================================= */
+
+.credits-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.credits-heading {
+    -unity-font-definition: var(--font-main);
+    font-size: 20px;
+    color: var(--color-accent);
+    -unity-text-align: upper-center;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.credits-name {
+    -unity-font-definition: var(--font-main);
+    font-size: 26px;
+    color: var(--color-white);
+    -unity-text-align: upper-center;
+    margin-bottom: 0;
+}
+
+.credits-separator {
+    height: 1px;
+    background-color: var(--color-white-faint);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* stretch across the content area */
+    align-self: stretch;
+}
