@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Style src="project://database/Assets/UI/UI%20Documents/StyleSheets/Transition.uss" />
+    <ui:VisualElement name="fade-overlay" class="fade-overlay" />
+</ui:UXML>

@@ -1,6 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem.Controls;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
@@ -14,10 +14,13 @@ public class MenuManager : MonoBehaviour
     public UIDocument mainMenu;
     public UIDocument settings;
     public UIDocument controls;
+    public UIDocument transition;
+
     private MenuState _currentUI;
     private PauseMenuState _currentPauseMenuState;
     private Dictionary<MenuState, UIDocument> _menus = new Dictionary<MenuState, UIDocument>();
     private Dictionary<PauseMenuState, UIDocument> _pauseMenus = new Dictionary<PauseMenuState, UIDocument>();
+    private VisualElement _fadeOverlay;
 
     public enum MenuState
     {
@@ -40,7 +43,6 @@ public class MenuManager : MonoBehaviour
         {
             Debug.LogError("There can only be one instance of MenuManager");
         }
-
         Instance = this;
 
         _menus[MenuState.Ingame] = ingame;
@@ -54,6 +56,9 @@ public class MenuManager : MonoBehaviour
 
         SetMenu(MenuState.Ingame);
         SetPauseMenu(PauseMenuState.Disabled);
+        _fadeOverlay = transition.rootVisualElement.Q<VisualElement>("fade-overlay");
+        _fadeOverlay.style.opacity = 0f;
+        _fadeOverlay.style.display = DisplayStyle.None;
     }
 
     void OnEnable()
@@ -64,6 +69,34 @@ public class MenuManager : MonoBehaviour
     void OnDisable()
     {
         GameEventManager.Instance.inputEvents.OnEscPressed -= EscPressed;
+    }
+
+    public IEnumerator FadeRoutine(float targetAlpha, float duration)
+    {
+        if (_fadeOverlay == null) yield break;
+
+        if (targetAlpha > 0f)
+        {
+            _fadeOverlay.style.display = DisplayStyle.Flex;
+        }
+
+        float startAlpha = _fadeOverlay.style.opacity.value;
+        float time = 0f;
+
+        while (time < duration)
+        {
+            time += Time.unscaledDeltaTime;
+            float t = Mathf.Clamp01(time / duration);
+            _fadeOverlay.style.opacity = Mathf.SmoothStep(startAlpha, targetAlpha, t);
+            yield return null;
+        }
+
+        _fadeOverlay.style.opacity = targetAlpha;
+
+        if (targetAlpha <= 0f)
+        {
+            _fadeOverlay.style.display = DisplayStyle.None;
+        }
     }
 
     public void EscPressed()
@@ -82,14 +115,7 @@ public class MenuManager : MonoBehaviour
         _currentUI = menu;
         foreach (var keyValuePair in _menus)
         {
-            if (keyValuePair.Key != _currentUI)
-            {
-                keyValuePair.Value.gameObject.SetActive(false);
-            }
-            else
-            {
-                keyValuePair.Value.gameObject.SetActive(true);
-            }
+            keyValuePair.Value.gameObject.SetActive(keyValuePair.Key == _currentUI);
         }
     }
 
@@ -98,19 +124,8 @@ public class MenuManager : MonoBehaviour
         _currentPauseMenuState = menu;
         foreach (var keyValuePair in _pauseMenus)
         {
-            if (keyValuePair.Key != menu)
-            {
-                if (keyValuePair.Value != null)
-                {
-                    keyValuePair.Value.gameObject.SetActive(false);
-                }
-            }
-            else
-            {
-                if (keyValuePair.Value != null)
-                {
-                    keyValuePair.Value.gameObject.SetActive(true);
-                }
+            if (keyValuePair.Value != null) {
+                keyValuePair.Value.gameObject.SetActive(keyValuePair.Key == _currentPauseMenuState);
             }
         }
     }

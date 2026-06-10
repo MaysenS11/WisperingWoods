@@ -24,14 +24,7 @@ public class ShrineUpdate : MonoBehaviour
         {
             foreach (var keyValue in _shrineDict)
             {
-                if (keyValue.Key == questName)
-                {
-                    keyValue.Value.SetActive(true);
-                }
-                else
-                {
-                    keyValue.Value.SetActive(false);
-                }
+                keyValue.Value.SetActive(keyValue.Key == questName);
             }
         }
     }
