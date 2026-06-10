@@ -59,71 +59,7 @@
     margin-bottom: 32px;
 }
 
-.sliders {
-    flex-direction: column;
-    align-items: stretch;
-}
 
-.slider-row {
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 28px;
-}
-
-.slider-label {
-    -unity-font-definition: var(--font-main);
-    font-size: 22px;
-    color: var(--color-white-dim);
-    width: 80px;
-    -unity-text-align: middle-left;
-    flex-shrink: 0;
-}
-
-.slider-value {
-    -unity-font-definition: var(--font-main);
-    font-size: 18px;
-    color: var(--color-accent);
-    width: 38px;
-    -unity-text-align: middle-right;
-    flex-shrink: 0;
-}
-
-.slider {
-    flex-grow: 1;
-    margin-left: 12px;
-    margin-right: 8px;
-    height: 24px;
-}
-
-.slider > #unity-tracker {
-    background-color: var(--color-white-faint);
-    border-radius: 4px;
-    height: 6px;
-    border-width: 0;
-    margin-top: 9px;
-}
-
-.slider > #unity-tracker > #unity-fill {
-    background-color: var(--color-accent);
-    border-radius: 4px;
-}
-
-.slider > #unity-dragger {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background-color: var(--color-white);
-    border-width: 2px;
-    border-color: var(--color-accent);
-    top: -8px;
-    -unity-background-image-tint-color: var(--color-white);
-}
-
-.slider > #unity-dragger:hover {
-    background-color: var(--color-accent);
-    border-color: var(--color-white);
-    scale: 1.15 1.15;
-}
 
 .spacer {
     flex-grow: 1;
