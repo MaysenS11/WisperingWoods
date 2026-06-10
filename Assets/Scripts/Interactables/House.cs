@@ -39,7 +39,6 @@ public class Houses : MonoBehaviour
         }
         else
         {
-            if (houseInside != null) houseInside.SetActive(false);
             if (cameraFixed != null) cameraFixed.Priority = 0; 
         }
 
@@ -60,5 +59,10 @@ public class Houses : MonoBehaviour
         if (movement != null) movement.enabled = true;
 
         _isTransitioning = false;
+
+        if (triggerType == HouseTriggerType.InsideExit)
+        {
+            if (houseInside != null) houseInside.SetActive(false);
+        }
     }
 }
