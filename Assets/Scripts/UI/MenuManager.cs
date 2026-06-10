@@ -14,8 +14,10 @@ public class MenuManager : MonoBehaviour
     public UIDocument mainMenu;
     public UIDocument settings;
     public UIDocument controls;
+    public UIDocument credits;
     public UIDocument transition;
 
+    private bool inMainMenu;
     private MenuState _currentUI;
     private PauseMenuState _currentPauseMenuState;
     private Dictionary<MenuState, UIDocument> _menus = new Dictionary<MenuState, UIDocument>();
@@ -34,7 +36,8 @@ public class MenuManager : MonoBehaviour
         Disabled,
         Main,
         Settings,
-        Controls
+        Controls,
+        Credits
     }
 
     void Awake()
@@ -53,8 +56,8 @@ public class MenuManager : MonoBehaviour
         _pauseMenus[PauseMenuState.Main] = pause;
         _pauseMenus[PauseMenuState.Settings] = settings;
         _pauseMenus[PauseMenuState.Controls] = controls;
-
-        SetMenu(MenuState.Ingame);
+        _pauseMenus[PauseMenuState.Controls] = credits;
+        
         SetPauseMenu(PauseMenuState.Disabled);
         
         _fadeOverlay = transition.rootVisualElement.Q<VisualElement>("fade-overlay");
@@ -65,6 +68,17 @@ public class MenuManager : MonoBehaviour
     void OnEnable()
     {
         GameEventManager.Instance.inputEvents.OnEscPressed += EscPressed;
+        
+        if(SceneManager.GetActiveScene().name == "MainMenu") 
+        {
+            SetMenu(MenuState.MainMenu);
+            inMainMenu = true;
+        }
+        else
+        {
+            SetMenu(MenuState.Ingame);
+            inMainMenu = false;
+        }
     }
 
     void OnDisable()
@@ -102,7 +116,14 @@ public class MenuManager : MonoBehaviour
 
     public void EscPressed()
     {
-        if (_currentPauseMenuState == PauseMenuState.Disabled) {
+        if (inMainMenu)
+        {
+            if (_currentUI != MenuState.MainMenu)
+            {
+                SetMenu(MenuState.MainMenu);
+            }
+        }
+        else if (_currentPauseMenuState == PauseMenuState.Disabled) {
             Time.timeScale = 0;
             SetPauseMenu(PauseMenuState.Main);
         } else {

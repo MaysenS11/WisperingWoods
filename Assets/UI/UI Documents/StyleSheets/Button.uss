@@ -2,7 +2,7 @@
 }
 
 .Button {
-    background-image: url("project://database/Assets/Sprites/UI/Button_Main_Menu_Normal.png?fileID=2800000&guid=ce6c0be899240e34d86cc4f0acbf3b6c&type=3#Button_Main_Menu_Normal");
+    background-image: url("project://database/Assets/Sprites/UI/Buttons/Button_Menu_Normal.png?fileID=2800000&guid=ce6c0be899240e34d86cc4f0acbf3b6c&type=3#Button_Menu_Normal");
     background-color: rgba(0, 0, 0, 0);
     width: 354px;
     height: 150px;
@@ -11,10 +11,13 @@
     text-overflow: clip;
     opacity: 1;
     -unity-text-outline-color: rgba(0, 0, 0, 0);
+    -unity-font-definition: url("project://database/Assets/Font/Kabel_Regular.ttf?fileID=12800000&guid=7e6037f3fb6824a4fa9d6f197d8131c6&type=3#Kabel_Regular");
+    color: rgb(255, 255, 255);
+    font-size: 25px;
 }
 
 .Button:hover {
-    background-image: url("project://database/Assets/Sprites/UI/Button_Main_Menu_Hover.png?fileID=2800000&guid=19734f6979ccecc4283e70c50bd20ee9&type=3#Button_Main_Menu_Hover");
+    background-image: url("project://database/Assets/Sprites/UI/Buttons/Button_Menu_Hover.png?fileID=2800000&guid=19734f6979ccecc4283e70c50bd20ee9&type=3#Button_Menu_Hover");
     background-color: rgba(0, 0, 0, 0);
     width: 354px;
     height: 150px;
@@ -24,7 +27,7 @@
 }
 
 .Button:active {
-    background-image: url("project://database/Assets/Sprites/UI/Button_Main_Menu_Clicked.png?fileID=2800000&guid=7521de96d020f704c927cd297cb2376a&type=3#Button_Main_Menu_Clicked");
+    background-image: url("project://database/Assets/Sprites/UI/Buttons/Button_Menu_Clicked.png?fileID=2800000&guid=7521de96d020f704c927cd297cb2376a&type=3#Button_Menu_Clicked");
     background-color: rgba(0, 0, 0, 0);
     width: 354px;
     height: 150px;
@@ -33,11 +36,3 @@
     text-overflow: clip;
     border-left-color: rgba(0, 0, 0, 0);
 }
-
-
-
-
-
-
-
-

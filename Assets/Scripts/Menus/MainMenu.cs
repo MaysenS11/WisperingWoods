@@ -1,48 +1,52 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using UnityEngine.Assertions;
 
 public class MainMenu : MonoBehaviour
 {
-    /*[SerializeField] UIDocument mainMenuDocument;
-
-    private Button StartButton;
-    private Button OptionsButton;
-    private Button CreditsButton;
-    private Button QuitButton;
+    private Button _startButton;
+    private Button _settingsButton;
+    private Button _creditsButton;
+    private Button _quitButton;
+    
+    private MenuManager _parent;
 
     void Awake()
     {
-        VisualElement root = mainMenuDocument.rootVisualElement;
+        Assert.IsTrue(this.enabled);
+        _parent = transform.parent.gameObject.TryGetComponent<MenuManager>(out var menuManager) ? menuManager : null;
         
-        StartButton = root.Q<Button>("StartButton");
-        OptionsButton = root.Q<Button>("OptionsButton");
-        CreditsButton = root.Q<Button>("CreditsButton");
-        QuitButton = root.Q<Button>("QuitButton");
-        
-        StartButton.clickable.clicked += StartGame;
-        OptionsButton.clickable.clicked += OpenOptions;
-        CreditsButton.clickable.clicked += OpenCredits;
-        QuitButton.clickable.clicked += QuitGame;
+        var root = GetComponent<UIDocument>().rootVisualElement;
+        _startButton = root.Q<Button>("startButton");
+        _settingsButton = root.Q<Button>("settingsButton");
+        _creditsButton = root.Q<Button>("creditsButton");
+        _quitButton = root.Q<Button>("quitButton");
+
+        _startButton.RegisterCallback<ClickEvent>(StartClicked);
+        _settingsButton.RegisterCallback<ClickEvent>(SettingsClicked);
+        _creditsButton.RegisterCallback<ClickEvent>(CreditsClicked);
+        _quitButton.RegisterCallback<ClickEvent>(QuitClicked);
     }
 
-    void StartGame()
+    void StartClicked(ClickEvent evt)
     {
         SceneManager.LoadScene("Level");
+        Time.timeScale = 1;
     }
-    
-    void OpenOptions()
+
+    void SettingsClicked(ClickEvent evt)
     {
-        print("Open Options");
+        _parent.SetPauseMenu(MenuManager.PauseMenuState.Settings);
     }
-    
-    void OpenCredits()
+
+    void CreditsClicked(ClickEvent evt)
     {
-        print("Open Credits");
+        _parent.SetPauseMenu(MenuManager.PauseMenuState.Credits);
     }
-    
-    void QuitGame()
+
+    void QuitClicked(ClickEvent evt)
     {
         Application.Quit();
-    }*/
+    }
 }
