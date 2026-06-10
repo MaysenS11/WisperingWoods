@@ -585,6 +585,7 @@ MonoBehaviour:
   houseInside: {fileID: 1856086423}
   destinationSpawnPoint: {fileID: 1078577483}
   cameraFixed: {fileID: 476101054}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &69981208
 BoxCollider2D:
@@ -1031,6 +1032,7 @@ MonoBehaviour:
   houseInside: {fileID: 834120911}
   destinationSpawnPoint: {fileID: 941675281}
   cameraFixed: {fileID: 476101054}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &238654720
 BoxCollider2D:
@@ -2249,6 +2251,7 @@ MonoBehaviour:
   houseInside: {fileID: 755597622}
   destinationSpawnPoint: {fileID: 1774287123}
   cameraFixed: {fileID: 476101054}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &413347851
 BoxCollider2D:
@@ -5783,6 +5786,7 @@ MonoBehaviour:
   houseInside: {fileID: 1023269309}
   destinationSpawnPoint: {fileID: 661638275}
   cameraFixed: {fileID: 476101054}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &1424507524
 BoxCollider2D:
@@ -6674,6 +6678,7 @@ MonoBehaviour:
   houseInside: {fileID: 1856086423}
   destinationSpawnPoint: {fileID: 513860457}
   cameraFixed: {fileID: 476101054}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!1 &1570691310
 GameObject:
@@ -7457,6 +7462,7 @@ MonoBehaviour:
   houseInside: {fileID: 1508091956}
   destinationSpawnPoint: {fileID: 852510787}
   cameraFixed: {fileID: 476101054}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &1638749722
 BoxCollider2D:
@@ -8350,6 +8356,7 @@ MonoBehaviour:
   houseInside: {fileID: 1023269309}
   destinationSpawnPoint: {fileID: 254890427}
   cameraFixed: {fileID: 476101054}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!1 &1811255339
 GameObject:
@@ -9209,6 +9216,7 @@ MonoBehaviour:
   houseInside: {fileID: 1508091956}
   destinationSpawnPoint: {fileID: 1086437608}
   cameraFixed: {fileID: 476101054}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &1916653932
 BoxCollider2D:
@@ -9684,6 +9692,7 @@ MonoBehaviour:
   houseInside: {fileID: 834120911}
   destinationSpawnPoint: {fileID: 506298716}
   cameraFixed: {fileID: 476101054}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!61 &2084994603
 BoxCollider2D:
@@ -9910,6 +9919,7 @@ MonoBehaviour:
   houseInside: {fileID: 755597622}
   destinationSpawnPoint: {fileID: 1969970139}
   cameraFixed: {fileID: 476101054}
+  cameraDynamicComposer: {fileID: 1753945523}
   fadeDuration: 0.4
 --- !u!1 &2116650913
 GameObject:

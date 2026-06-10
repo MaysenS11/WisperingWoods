@@ -13,6 +13,7 @@ public class Houses : MonoBehaviour
     public GameObject houseInside;
     public Transform destinationSpawnPoint;
     public CinemachineCamera cameraFixed;
+    public CinemachinePositionComposer cameraDynamicComposer;
     public float fadeDuration = 0.4f;
 
     private static bool _isTransitioning = false;
@@ -35,11 +36,13 @@ public class Houses : MonoBehaviour
         if (triggerType == HouseTriggerType.OutsideEntry)
         {
             if (houseInside != null) houseInside.SetActive(true);
-            if (cameraFixed != null) cameraFixed.Priority = 20; 
+            if (cameraFixed != null) cameraFixed.Priority = 20;
+            if (cameraDynamicComposer != null) cameraDynamicComposer.enabled = false;
         }
         else
         {
-            if (cameraFixed != null) cameraFixed.Priority = 0; 
+            if (cameraFixed != null) cameraFixed.Priority = 0;
+            if (cameraDynamicComposer != null) cameraDynamicComposer.enabled = true;
         }
 
         if (destinationSpawnPoint != null)
