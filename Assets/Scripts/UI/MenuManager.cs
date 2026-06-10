@@ -138,4 +138,7 @@ public class MenuManager : MonoBehaviour
             }
         }
     }
+
+    public MenuState GetCurrentMenu() { return _currentUI; }
+    public PauseMenuState GetCurrentPauseMenu() { return _currentPauseMenuState; }
 }
