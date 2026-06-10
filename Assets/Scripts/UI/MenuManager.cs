@@ -56,6 +56,7 @@ public class MenuManager : MonoBehaviour
 
         SetMenu(MenuState.Ingame);
         SetPauseMenu(PauseMenuState.Disabled);
+        
         _fadeOverlay = transition.rootVisualElement.Q<VisualElement>("fade-overlay");
         _fadeOverlay.style.opacity = 0f;
         _fadeOverlay.style.display = DisplayStyle.None;
