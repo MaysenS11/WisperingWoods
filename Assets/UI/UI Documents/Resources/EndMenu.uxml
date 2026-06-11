@@ -1,0 +1,14 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/UI%20Documents/StyleSheets/Button.uss?fileID=7433441132597879392&amp;guid=41c8e0a22b2d7914bb2f653b5be56a81&amp;type=3#Button"/>
+    <Style src="project://database/Assets/UI/UI%20Documents/StyleSheets/PanelCommon.uss?fileID=7433441132597879392&amp;guid=eb40674f0fcca7944897287ae807a9fd&amp;type=3#PanelCommon"/>
+    <ui:VisualElement name="overlay" class="overlay">
+        <ui:VisualElement name="panel" class="panel" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;">
+            <ui:Image name="panelBg" class="panel-bg" style="-unity-slice-left: 127; -unity-slice-top: 109; -unity-slice-right: 127; -unity-slice-bottom: 109; -unity-slice-scale: 0.4px; position: absolute; background-image: url(&quot;project://database/Assets/Sprites/UI/PauseBoxBordered.png?fileID=2800000&amp;guid=00c4688d801e2d544a43f9acc03b1fe5&amp;type=3#PauseBoxBordered&quot;); opacity: 0.6;"/>
+            <ui:VisualElement name="content" class="content">
+                <ui:Label name="title" text="The End" class="title" style="font-size: 70px; margin-top: 30px; margin-bottom: 30px;"/>
+                <ui:VisualElement class="divider"/>
+                <ui:Button name="quitButton" text="quit" class="Button return-btn" style="border-width: 0;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

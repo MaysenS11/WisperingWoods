@@ -24,6 +24,7 @@ public class Npc : MonoBehaviour
     {
         if (_canInteract)
         {
+            if (MenuManager.Instance.GetCurrentMenu() == MenuManager.MenuState.Dialouge) return;
             MenuManager.Instance.SetMenu(MenuManager.MenuState.Dialouge);
             DialogueManager.Instance.StartDialogue(startKnot);
         }

@@ -119,7 +119,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1202611378
+--- !u!1 &294029735
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,9 +127,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1202611381}
-  - component: {fileID: 1202611379}
-  - component: {fileID: 1202611382}
+  - component: {fileID: 294029738}
+  - component: {fileID: 294029736}
+  - component: {fileID: 294029739}
   m_Layer: 0
   m_Name: EndMenuUI
   m_TagString: Untagged
@@ -137,13 +137,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1202611379
+--- !u!114 &294029736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202611378}
+  m_GameObject: {fileID: 294029735}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
@@ -160,28 +160,28 @@ MonoBehaviour:
   m_PivotReferenceSize: 0
   m_Pivot: 0
   m_WorldSpaceCollider: {fileID: 0}
---- !u!4 &1202611381
+--- !u!4 &294029738
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202611378}
+  m_GameObject: {fileID: 294029735}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5143614387111016083}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1202611382
+--- !u!114 &294029739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202611378}
+  m_GameObject: {fileID: 294029735}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1689200aa6ddc2040b874f78c4de9d83, type: 3}
@@ -354,7 +354,7 @@ PrefabInstance:
     - target: {fileID: 3102249969095013869, guid: 5041210afee1dc7448fab585cecf9e9c, type: 3}
       propertyPath: end
       value: 
-      objectReference: {fileID: 1202611379}
+      objectReference: {fileID: 294029736}
     - target: {fileID: 3102249969095013869, guid: 5041210afee1dc7448fab585cecf9e9c, type: 3}
       propertyPath: startingMenu
       value: 2
@@ -404,8 +404,8 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5699896893824153444, guid: 5041210afee1dc7448fab585cecf9e9c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1202611381}
+      insertIndex: 7
+      addedObject: {fileID: 294029738}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5041210afee1dc7448fab585cecf9e9c, type: 3}
 --- !u!4 &5143614387111016083 stripped

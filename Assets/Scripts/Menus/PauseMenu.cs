@@ -36,14 +36,17 @@ public class PauseMenu : MonoBehaviour
    void ResumeClicked(ClickEvent evt)
    {
       _parent.EscPressed();
+      SoundManager.Instance.CurrentMusicMode = SoundManager.MusicMode.InGameMusic;
    }
    void SettingsClicked(ClickEvent evt)
    {
       _parent.SetPauseMenu(MenuManager.PauseMenuState.Settings);
+      SoundManager.Instance.CurrentMusicMode = SoundManager.MusicMode.InMenuMusic;
    }
    void ControlsClicked(ClickEvent evt)
    {
       _parent.SetPauseMenu(MenuManager.PauseMenuState.Controls);
+      SoundManager.Instance.CurrentMusicMode = SoundManager.MusicMode.InMenuMusic;
    }
    void QuitClicked(ClickEvent evt)
    {

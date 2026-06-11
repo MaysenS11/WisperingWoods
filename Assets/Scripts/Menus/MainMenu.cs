@@ -29,6 +29,16 @@ public class MainMenu : MonoBehaviour
         _settingsButton.RegisterCallback<ClickEvent>(SettingsClicked);
         _creditsButton.RegisterCallback<ClickEvent>(CreditsClicked);
         _quitButton.RegisterCallback<ClickEvent>(QuitClicked);
+        
+        if (UnityEngine.EventSystems.EventSystem.current != null)
+        {
+            UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(null);
+        }
+    }
+
+    void OnEnable()
+    {
+        SoundManager.Instance.CurrentMusicMode = SoundManager.MusicMode.InMenuMusic;
     }
 
     void StartClicked(ClickEvent evt)

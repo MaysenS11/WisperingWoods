@@ -21,12 +21,13 @@ public class MenuManager : MonoBehaviour
     public UIDocument settings;
     public UIDocument controls;
     public UIDocument credits;
+    public UIDocument end;
     public UIDocument transition;
 
     [Header("References")]
     public PlayerMovement movement;
 
-    private MenuState _currentUI;
+    private MenuState _currentUI; 
     private PauseMenuState _currentPauseMenuState;
     private Dictionary<MenuState, UIDocument> _menus = new Dictionary<MenuState, UIDocument>();
     private Dictionary<PauseMenuState, UIDocument> _pauseMenus = new Dictionary<PauseMenuState, UIDocument>();
@@ -47,7 +48,8 @@ public class MenuManager : MonoBehaviour
         Main,
         Settings,
         Controls,
-        Credits
+        Credits,
+        End
     }
 
     void Awake()
@@ -67,6 +69,7 @@ public class MenuManager : MonoBehaviour
         _pauseMenus[PauseMenuState.Settings] = settings;
         _pauseMenus[PauseMenuState.Controls] = controls;
         _pauseMenus[PauseMenuState.Credits] = credits;
+        _pauseMenus[PauseMenuState.End] = end;
         
         SetMenu(startingMenu);
         SetPauseMenu(PauseMenuState.Disabled);
@@ -79,14 +82,6 @@ public class MenuManager : MonoBehaviour
     void OnEnable()
     {
         GameEventManager.Instance.inputEvents.OnEscPressed += EscPressed;
-
-        if (SceneManager.GetActiveScene().name == "Level")
-        {
-            if (!saveGame)
-            {
-                DialogueManager.Instance.StartDialogue("State_0");
-            }
-        }
     }
 
     void OnDisable()
@@ -159,14 +154,6 @@ public class MenuManager : MonoBehaviour
                 keyValuePair.Value.gameObject.SetActive(keyValuePair.Key == _currentPauseMenuState);
             }
         }
-    }
-    
-    public IEnumerator ExampleCoroutine()
-    {
-        Debug.Log("Example Example Coroutine");
-        yield return new WaitForSeconds(0.2f);
-        yield return StartCoroutine(FadeRoutine(1f, 2));
-        SceneManager.LoadScene("MainMenu");
     }
 
     public MenuState GetCurrentMenu() { return _currentUI; }

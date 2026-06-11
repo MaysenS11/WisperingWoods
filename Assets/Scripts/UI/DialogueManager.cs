@@ -83,6 +83,7 @@ public class DialogueManager : MonoBehaviour
         if (GameEventManager.Instance != null && GameEventManager.Instance.inputEvents != null)
         {
             GameEventManager.Instance.inputEvents.OnSubmitPressed += HandleSubmit;
+            GameEventManager.Instance.inputEvents.OnEscPressed += HandleSubmit;
         }
     }
 
@@ -91,6 +92,7 @@ public class DialogueManager : MonoBehaviour
         if (GameEventManager.Instance != null && GameEventManager.Instance.inputEvents != null)
         {
             GameEventManager.Instance.inputEvents.OnSubmitPressed -= HandleSubmit;
+            GameEventManager.Instance.inputEvents.OnEscPressed -= HandleSubmit;
         }
     }
 
@@ -322,23 +324,11 @@ public class DialogueManager : MonoBehaviour
         if (_npcNameTag != null) _npcNameTag.style.display = DisplayStyle.None;
     }
     
-
     private void ExitDialogue()
     {
-        if (QuestManager.Instance.IsQuestCompleted("candle_quest"))
-        {
-            StartCoroutine(MenuManager.Instance.ExampleCoroutine());
-        }
-        if (MenuManager.Instance.saveGame == false)
-        {
-            //Debug.Log("Setting saveGame to true on MenuManager");
-            MenuManager.Instance.saveGame = true;
-            MenuManager.Instance.SetMenu(MenuManager.MenuState.Ingame);
-        }
         _isDialogueActive = false;
         MenuManager.Instance.SetMenu(MenuManager.MenuState.Ingame);
         ResetUI();
     }
-    
     
 }
