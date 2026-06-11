@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using Cursor = UnityEngine.Cursor;
 
 public class MenuManager : MonoBehaviour
 {
@@ -126,9 +127,11 @@ public class MenuManager : MonoBehaviour
         if (_currentUI == MenuState.MainMenu) return;
         if (_currentPauseMenuState == PauseMenuState.Disabled) {
             Time.timeScale = 0;
+            Cursor.visible = true;
             SetPauseMenu(PauseMenuState.Main);
         } else {
             Time.timeScale = 1;
+            Cursor.visible = false;
             SetPauseMenu(PauseMenuState.Disabled);
         }
     }
@@ -156,6 +159,14 @@ public class MenuManager : MonoBehaviour
                 keyValuePair.Value.gameObject.SetActive(keyValuePair.Key == _currentPauseMenuState);
             }
         }
+    }
+    
+    public IEnumerator ExampleCoroutine()
+    {
+        Debug.Log("Example Example Coroutine");
+        yield return new WaitForSeconds(0.2f);
+        yield return StartCoroutine(FadeRoutine(1f, 2));
+        SceneManager.LoadScene("MainMenu");
     }
 
     public MenuState GetCurrentMenu() { return _currentUI; }

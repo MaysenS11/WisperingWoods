@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using UnityEngine.Assertions;
+using Cursor = UnityEngine.Cursor;
 
 public class MainMenu : MonoBehaviour
 {
@@ -32,7 +33,9 @@ public class MainMenu : MonoBehaviour
 
     void StartClicked(ClickEvent evt)
     {
+        Cursor.visible = false;
         SceneManager.LoadScene("Level");
+        SoundManager.Instance.CurrentMusicMode = SoundManager.MusicMode.InGameMusic;
         Time.timeScale = 1;
     }
 

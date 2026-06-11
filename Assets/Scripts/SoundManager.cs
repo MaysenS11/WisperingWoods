@@ -55,6 +55,9 @@ public class SoundManager : MonoBehaviour
         _musicObjects[MusicMode.InHouseMusic] = inHouseMusicObject;
         _musicObjects[MusicMode.ShrineBuildMusic] = shrineBuildMusicObject;
         _musicObjects[MusicMode.InCreditsMusic] = inCreditsMusicObject;
+
+        SetMusicVolume(PlayerPrefs.GetFloat("MusicVolume", 0.6f));
+        SetSFXVolume(PlayerPrefs.GetFloat("SFXVolume", 0.6f));
     }
 
     void Start() {

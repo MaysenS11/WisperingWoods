@@ -9,10 +9,17 @@
                 <ui:VisualElement class="divider"/>
                 <ui:VisualElement class="credits-list">
                     <ui:Label text="Pixel Art" class="credits-heading"/>
-                    <ui:Label text="Julian, Adam" class="credits-name"/>
+                    <ui:Label text=" lead Julian, assistant Adam" class="credits-name"/>
+                    <ui:VisualElement class="credits-separator"/>
+                    <ui:Label text="UI Art" name="Label" class="credits-heading"/>
+                    <ui:Label text="Emmanuel, Niclas" class="credits-name"/>
+                    <ui:VisualElement name="VisualElement" class="credits-separator"/>
+                    <ui:Label text="Narrative/ Sound/ Itch" name="Label" class="credits-heading"/>
+                    <ui:Label text="Emmanuel, Elias, Shookor" class="credits-name"/>
                     <ui:VisualElement class="credits-separator"/>
                     <ui:Label text="Programming" class="credits-heading"/>
-                    <ui:Label text="Maysen, RedDev" class="credits-name"/>
+                    <ui:Label text="Maysen, (RedDev)" class="credits-name"/>
+                    <ui:VisualElement class="credits-separator"/>
                 </ui:VisualElement>
                 <ui:VisualElement class="spacer"/>
                 <ui:Button name="backButton" text="Back" class="Button return-btn" style="border-width: 0;"/>

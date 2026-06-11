@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Ink.Runtime;
@@ -320,12 +321,13 @@ public class DialogueManager : MonoBehaviour
         if (_playerNameTag != null) _playerNameTag.style.display = DisplayStyle.None;
         if (_npcNameTag != null) _npcNameTag.style.display = DisplayStyle.None;
     }
+    
 
     private void ExitDialogue()
     {
         if (QuestManager.Instance.IsQuestCompleted("candle_quest"))
         {
-            SceneManager.LoadScene("MainMenu");
+            StartCoroutine(MenuManager.Instance.ExampleCoroutine());
         }
         if (MenuManager.Instance.saveGame == false)
         {
@@ -337,4 +339,6 @@ public class DialogueManager : MonoBehaviour
         MenuManager.Instance.SetMenu(MenuManager.MenuState.Ingame);
         ResetUI();
     }
+    
+    
 }

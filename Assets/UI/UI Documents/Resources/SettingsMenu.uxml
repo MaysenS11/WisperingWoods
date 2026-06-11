@@ -10,7 +10,7 @@
                 <ui:VisualElement name="sliders" class="sliders">
                     <ui:VisualElement class="slider-row">
                         <ui:Label text="Music" class="slider-label"/>
-                        <ui:Slider name="musicSlider" low-value="0" high-value="100" value="80" direction="Horizontal" class="slider"/>
+                        <ui:Slider name="musicSlider" low-value="0" high-value="100" value="60" direction="Horizontal" class="slider"/>
                         <ui:Label name="musicValue" text="80" class="slider-value"/>
                     </ui:VisualElement>
                     <ui:VisualElement class="slider-row">
