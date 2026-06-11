@@ -14,8 +14,9 @@ public class GameEventManager : MonoBehaviour
         {
             Debug.LogError("There can only be one instance of GameEventManager");
         }
-        
         Instance = this;
+        transform.parent = null;
+        DontDestroyOnLoad(gameObject);
         
         PlayerInput = GetComponent<PlayerInput>();
         inputEvents = new InputEvents();

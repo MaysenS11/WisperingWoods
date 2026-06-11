@@ -83,9 +83,7 @@ public class MenuManager : MonoBehaviour
         {
             if (!saveGame)
             {
-                SetMenu(MenuState.Dialouge);
                 DialogueManager.Instance.StartDialogue("State_0");
-                saveGame = true;
             }
         }
     }

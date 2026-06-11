@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Ink.Runtime;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
@@ -280,7 +281,7 @@ public class DialogueManager : MonoBehaviour
 
     private void UpdateNameTags(string currentName)
     {
-        Debug.Log($"Updating name tags for: '{currentName}'");
+        //Debug.Log($"Updating name tags for: '{currentName}'");
         
         // Handle Ink string representation which might include quotes
         if (!string.IsNullOrEmpty(currentName))
@@ -325,6 +326,12 @@ public class DialogueManager : MonoBehaviour
         if (QuestManager.Instance.IsQuestCompleted("candle_quest"))
         {
             SceneManager.LoadScene("MainMenu");
+        }
+        if (MenuManager.Instance.saveGame == false)
+        {
+            //Debug.Log("Setting saveGame to true on MenuManager");
+            MenuManager.Instance.saveGame = true;
+            MenuManager.Instance.SetMenu(MenuManager.MenuState.Ingame);
         }
         _isDialogueActive = false;
         MenuManager.Instance.SetMenu(MenuManager.MenuState.Ingame);

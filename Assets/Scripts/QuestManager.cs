@@ -28,6 +28,7 @@ public class QuestManager : MonoBehaviour
             return;
         }
         Instance = this;
+        transform.parent = null;
         DontDestroyOnLoad(gameObject);
         
         // Initialize descriptions for known quests

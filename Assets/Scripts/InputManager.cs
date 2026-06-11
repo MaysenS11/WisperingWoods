@@ -23,6 +23,8 @@ public class InputManager : MonoBehaviour
             Debug.LogError("There can only be one instance of InputManager");
         }
         _instance = this;
+        transform.parent = null;
+        DontDestroyOnLoad(gameObject);
         _moveAction = PlayerInput.actions["Move"];
     }
 

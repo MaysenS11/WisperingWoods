@@ -2091,6 +2091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InputManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5835147662552976912, guid: 1892708b833d8ca44b1a05ddf8beaba8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8737422335811566243, guid: 1892708b833d8ca44b1a05ddf8beaba8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.54328
@@ -4235,7 +4239,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.92256165, y: 2.7061844}
   m_EdgeRadius: 0
---- !u!43 &790500494
+--- !u!43 &775733678
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9203,7 +9207,7 @@ MonoBehaviour:
     rid: 2263501057841168546
   m_ShadowCastingSource: 2
   m_ShadowMesh:
-    m_Mesh: {fileID: 790500494}
+    m_Mesh: {fileID: 775733678}
     m_LocalBounds:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0, y: 0, z: 0}
@@ -10432,6 +10436,10 @@ PrefabInstance:
     - target: {fileID: 7376716521733533953, guid: 8a4783bee5a47074ea36b4ebc3ecd2ec, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376716521733533953, guid: 8a4783bee5a47074ea36b4ebc3ecd2ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28436,6 +28444,10 @@ PrefabInstance:
     - target: {fileID: 8768807194864316505, guid: 9d978b1db5844df40bde6dce78315759, type: 3}
       propertyPath: m_Name
       value: FMOD_Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768807194864316505, guid: 9d978b1db5844df40bde6dce78315759, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

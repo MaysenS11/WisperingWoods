@@ -26,7 +26,7 @@ public class SoundManager : MonoBehaviour
     public MusicMode CurrentMusicMode {
         get => _currentMusicMode;
         set {
-            Debug.Log($"Switching music mode to: {value}");
+            //Debug.Log($"Switching music mode to: {value}");
             foreach (var kvp in _musicObjects) {
                 kvp.Value.SetActive(kvp.Key == value);
             }
@@ -44,6 +44,7 @@ public class SoundManager : MonoBehaviour
             return;
         }
         Instance = this;
+        transform.parent = null;
         DontDestroyOnLoad(gameObject);
 
         _musicBus = FMODUnity.RuntimeManager.GetBus("bus:/Music");
