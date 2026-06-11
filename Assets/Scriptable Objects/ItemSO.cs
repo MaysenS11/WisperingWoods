@@ -13,13 +13,13 @@ public class ItemSO : ScriptableObject
     public bool canCollect;
     
 
-    public void SaveItemCollected()
+    /*public void SaveItemCollected()
     {
         string saveKey = $"Item_{ItemName}_Collected";
         PlayerPrefs.SetInt(saveKey, _itemCount);
         PlayerPrefs.SetInt(saveKey, Convert.ToInt32(canCollect));
         PlayerPrefs.Save();
-    }
+    }*/
 
     public void LoadItemCollected()
     {
@@ -36,7 +36,7 @@ public class ItemSO : ScriptableObject
     public void AddItemCount()
     {
         _itemCount++;
-        SaveItemCollected();
+        //SaveItemCollected();
         Debug.Log("ItemCount " + ItemName + " " + _itemCount);
         //CollectItem(string ItemName);
     }

@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Ink.Runtime;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -321,6 +322,10 @@ public class DialogueManager : MonoBehaviour
 
     private void ExitDialogue()
     {
+        if (QuestManager.Instance.IsQuestCompleted("candle_quest"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
         _isDialogueActive = false;
         MenuManager.Instance.SetMenu(MenuManager.MenuState.Ingame);
         ResetUI();

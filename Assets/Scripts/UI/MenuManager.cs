@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,6 +30,8 @@ public class MenuManager : MonoBehaviour
     private Dictionary<MenuState, UIDocument> _menus = new Dictionary<MenuState, UIDocument>();
     private Dictionary<PauseMenuState, UIDocument> _pauseMenus = new Dictionary<PauseMenuState, UIDocument>();
     private VisualElement _fadeOverlay;
+    
+    public bool saveGame;
 
     public enum MenuState
     {
@@ -75,6 +78,16 @@ public class MenuManager : MonoBehaviour
     void OnEnable()
     {
         GameEventManager.Instance.inputEvents.OnEscPressed += EscPressed;
+
+        if (SceneManager.GetActiveScene().name == "Level")
+        {
+            if (!saveGame)
+            {
+                SetMenu(MenuState.Dialouge);
+                DialogueManager.Instance.StartDialogue("State_0");
+                saveGame = true;
+            }
+        }
     }
 
     void OnDisable()
